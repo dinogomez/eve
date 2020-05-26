@@ -63,6 +63,11 @@
                       $("p").show();
                   });
 
+                  // function onDelete(guestcode){
+                  //   console.log('guestcode is ' + guestcode);
+                  //   confirm("Are you sure to delete this?");
+                  // }
+
                   //MY JQUERY CODE IS UNFEFINED *needs fixing @pol
                   //   $(document).ready(function(){
                   //   $("#visit").hide();

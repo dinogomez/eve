@@ -24,6 +24,8 @@ function CheckForNull(){
     }
   }
 
+
+
   //VAR I STARTS AT INDEX 1 BECAUSE DATE IS NOT YET CHECKED.
 
 }
