@@ -101,7 +101,9 @@ INSERT INTO `users` (`permission`, `username`, `password`, `firstName`, `middleN
 (1, '202001019', '$2y$10$xZBRyShve.xrRhi9gjPDGeoDHBKt3ixb.5msYXDfey.aiTlAYb7NC', 'Allan', 'Peter', 'Cayatano'),
 (3, '202020', 'power', 'Jack', 'a', 'Sparrow'),
 (0, 'admin', 'admin', '', '', ''),
-(0, 'devnet-pol', 'devnet', '', '', '');
+(0, 'devnet-pol', 'devnet', '', '', ''),
+(2, '201801014', 'rawr', 'Camille', 'Nicole', 'Pascua'),
+(1, 'root', 'root', '', '', '');
 
 -- --------------------------------------------------------
 

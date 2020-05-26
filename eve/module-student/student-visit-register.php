@@ -52,7 +52,7 @@ $(document).ready(function(){
 
      <div class="container jumbocontatiner shadow p-5 visit" id="visit">
      <h2 class="blog-post-title text-center">Visit Registration</h2>
-     <p class="blog-post-meta text-center">Please fill up the following up</p>
+     <p class="blog-post-meta text-center">Please fill up the following</p>
      <form class="regform" id="visit-form" action="student-visit-confirm.php"  method="post">
 
 

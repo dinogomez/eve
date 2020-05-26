@@ -63,7 +63,7 @@ if(isset($_POST['logout'])){
            </select>
          </div>
          <div class="form-group">
-           <label for="formGroupExampleInput2">Contanct Number</label>
+           <label for="formGroupExampleInput2">Contact Number</label>
            <input type="text" class="form-control" name="contactnum" placeholder="optional">
          </div>
 

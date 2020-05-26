@@ -19,8 +19,6 @@
          $contactnum = mysqli_real_escape_string($conn,$_POST['contactnum']);
          $generatekey = guest_keygen(6,2);
 
-
-
          // //we need to cast date variable because MYSQL Date format is YYY-MMM-DDD
 
          if(isset($_POST['register'])){
