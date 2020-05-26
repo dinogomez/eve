@@ -1,7 +1,6 @@
 <?php
+require_once '../library-process/connection.php';
 
-  require_once 'library-process/connection.php';
-  session_start();
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
