@@ -55,16 +55,7 @@ if(isset($_POST['submit'])){
           echo $_SESSION['username'];
           echo $_SESSION['token'];
 
-          $token = $_SESSION['token'];
-
-          $sql = "SELECT count(*) AS allcount FROM user_token WHERE username='$username'";
-          $result_token = mysqli_query($conn,$sql);
-          $row_token = mysqli_fetch_assoc($result_token);
-          if($row_token['allcount'] > 0){
-           mysqli_query($conn,"UPDATE user_token set token='$token' where username='$username'");
-          }else{
-           mysqli_query($conn,"INSERT into user_token(username,token) values('$username','$token')");
-          }
+            
           header('Location: ../module-student/student-home.php');
 
         } else {
