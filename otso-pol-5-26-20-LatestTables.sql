@@ -27,7 +27,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `encryption`
 --
 
-CREATE TABLE `encryption` (
+DROP TABLE IF EXISTS `encryption`;
+CREATE TABLE IF NOT EXISTS `encryption` (
   `encryptionkey` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -44,7 +45,8 @@ INSERT INTO `encryption` (`encryptionkey`) VALUES
 -- Table structure for table `guest_register`
 --
 
-CREATE TABLE `guest_register` (
+DROP TABLE IF EXISTS `guest_register`;
+CREATE TABLE IF NOT EXISTS `guest_register` (
   `id` int(11) NOT NULL,
   `firstname` varchar(50) NOT NULL,
   `middlename` varchar(50) NOT NULL,
@@ -78,7 +80,8 @@ INSERT INTO `guest_register` (`id`, `firstname`, `middlename`, `lastname`, `emai
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
   `permission` int(1) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(200) NOT NULL,
@@ -106,7 +109,8 @@ INSERT INTO `users` (`permission`, `username`, `password`, `firstName`, `middleN
 -- Table structure for table `user_school_visit`
 --
 
-CREATE TABLE `user_school_visit` (
+DROP TABLE IF EXISTS `user_school_visit`;
+CREATE TABLE IF NOT EXISTS `user_school_visit` (
   `id` int(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `firstName` varchar(50) NOT NULL,
@@ -141,7 +145,8 @@ INSERT INTO `user_school_visit` (`id`, `username`, `firstName`, `middleName`, `l
 -- Table structure for table `user_token`
 --
 
-CREATE TABLE `user_token` (
+DROP TABLE IF EXISTS `user_token`;
+CREATE TABLE IF NOT EXISTS `user_token` (
   `id` int(30) NOT NULL,
   `username` varchar(80) NOT NULL,
   `token` varchar(80) NOT NULL
