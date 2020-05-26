@@ -1,1 +1,0 @@
-wag nyo pansinin
