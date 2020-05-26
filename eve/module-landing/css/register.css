@@ -1,0 +1,162 @@
+
+
+
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #2a2a2a;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+/* PT sans
+font-family: 'PT Sans', sans-serif;
+ */
+
+
+
+ .info-note{
+   margin-bottom: -30px;
+ }
+ #code{
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight:900;
+   font-size: 70px;
+ }
+
+ .info{
+   margin-top: -30px;
+   color: white;
+ }
+
+ #confirm{
+   width: 100px;
+ }
+ .navbar-custom{
+   background-color: black;
+ }
+ .nav-title{
+   font-family: 'Righteous', sans-serif;
+   font-weight: 900;
+   font-style: normal;
+   letter-spacing: 1px;
+   font-size: 25px;
+   border-bottom:1px;
+   border-color: #282828;
+
+ }
+
+ .navright{
+   font-size: 20px;
+ }
+ .modal-title{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 45px;
+   color: white;
+ }
+ .nav-text{
+   font-family: 'Roboto', sans-serif;
+   font-weight:500;
+   color: white;
+   font-size: 15px;
+   margin-right: 20px;
+
+ }
+ .navlink:hover{
+   color: #ffc107  ;
+ }
+ .nav-bottom{
+   font-family: 'Roboto', sans-serif;
+   font-weight:200;
+   color: white;
+ }
+
+ .jumbotron {
+     background: none;
+     margin-bottom: -55px;
+
+ }
+
+ .list-group-item{
+   background-color: transparent;
+   color: white;
+ }
+
+ .list-text{
+   font-weight: 300;
+ }
+ .modal-backdrop {
+    background-color: none;
+ }
+ .modal-content {
+    transform: translate(0%, 20%);
+    border-radius: 0px;
+    background-color: white;
+    color: black;
+    border: none;
+ }
+
+ .modal-header {
+  min-height: 16.42857143px;
+  border-radius: 0px;
+  padding: 15px;
+  margin-bottom: -15px;
+  padding-top: 5px;
+  background-color: black;
+
+  }
+
+  .modal-title{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+   }
+
+ .modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #131417;
+  color: black;
+ }
+
+ .jumbocontatiner{
+   background-color: #212121;
+ }
+
+ .sublink{
+   color: #D83F87;
+ }
+
+ .yellow{
+   color: #ffc107 ;
+ }
+
+ .jumbolead{
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+ }
+
+ .sublink:hover {
+   color: #ffc107;
+   font-size: 21px;
+ }
+ .notstudent a:link{
+     color:#ffc107;
+ }
+
+.btn-custom-purple{
+  border-radius: 20px;
+  color: white;
+  background-color: #D83F87;
+}
+
+.btn-custom-purple:hover{
+  width: 100px;
+  color: white;
+  background-color: #ffc107;
+}

@@ -1,0 +1,115 @@
+
+
+
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #131417;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+/* PT sans
+font-family: 'PT Sans', sans-serif;
+ */
+
+
+
+.info-note{
+  margin-bottom: -30px;
+}
+#code{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight:900;
+  font-size: 70px;
+}
+
+.info{
+  margin-top: -30px;
+  color: white;
+}
+
+#confirm{
+  width: 100px;
+}
+.navbar-custom{
+  background-color: #1e1f26;
+}
+.nav-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 35px;
+  border-bottom:1px;
+  border-color: #282828;
+
+}
+.modal-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  color: white;
+}
+.nav-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+  color: white;
+  margin-right: 20px;
+
+}
+
+.nav-bottom{
+  font-family: 'Roboto', sans-serif;
+  font-weight:200;
+  color: white;
+}
+
+.jumbotron {
+    background: none;
+    margin-bottom: -55px;
+
+}
+
+.list-group-item{
+  background-color: transparent;
+  color: white;
+}
+
+.list-text{
+  font-weight: 300;
+}
+.modal-backdrop {
+   background-color: #1e1f26;
+}
+.modal-content {
+   transform: translate(0%, 20%);
+   background-color: #1e1f26;
+}
+
+.modal-header {
+ min-height: 16.42857143px;
+ padding: 15px;
+ border-bottom: 1px solid #131417;
+ }
+
+.modal-footer {
+ padding: 15px;
+ text-align: right;
+ border-top: 1px solid #131417;
+}
+.dropdown-menu {
+    color: #FFFFFF;
+}
+
+.dropdown-item{
+  color: #FFFFFF;
+}
+.dropdown-menu {
+
+  background-color:#1e1f26;
+  transform: translate(-205px, 40px);
+  width: 250px;
+  padding: 10px;
+}
