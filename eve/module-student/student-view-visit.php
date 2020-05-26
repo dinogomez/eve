@@ -80,10 +80,19 @@ $(document).ready(function(){
                     <br>
                   </td>";
          }
-
+         // echo "Row count: ".$count."<br>";
          while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
            //setting values
            $dateOfVisit = $row['dateOfVisit'];
+
+           //debug
+           // echo "if ".$dateOfVisit." <= ".date('Y-m-d');
+           // if(date("Y-m-d") <= $dateOfVisit)
+           //  echo " = TRUE<br>";
+           // else {
+           //  echo " = FALSE<br>";
+           // }
+           //debug
 
            if(date("Y-m-d") <= $dateOfVisit){
            echo "<tr>
@@ -98,8 +107,9 @@ $(document).ready(function(){
                     <i class='fas fa-trash-alt black'> </i></a>";
            echo "</td>
               </tr>";
+           $rownum++;
           }
-          $rownum++;
+
         }
           ?>
        </tbody>
@@ -150,10 +160,21 @@ $(document).ready(function(){
                     <br>
                   </td>";
          }
+         // echo "Row count: ".$count."<br>";
          while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
            //setting values
            $dateOfVisit = $row['dateOfVisit'];
-           if($dateOfVisit > date("Y-m-d")){
+
+          //debug
+           // echo "if ".$dateOfVisit." < ".date('Y-m-d');
+           // if($dateOfVisit < date("Y-m-d")){
+           //   echo " = TRUE<br>";
+           // }else {
+           //   echo " = FALSE<br>";
+           // }
+          //debug
+
+           if($dateOfVisit < date("Y-m-d")){
              echo "<tr>
              <td>" . $rownum . "</td>
              <td>" . $row['purpose'] . "</td>
@@ -161,9 +182,10 @@ $(document).ready(function(){
              <td>" . $row['idType'] . "</td>
              <td>" . $row['guestcode'] . "</td>";
              echo "</tr>";
+             $rownum++;
            }
         }
-          $rownum++;
+
           ?>
        </tbody>
      </table>

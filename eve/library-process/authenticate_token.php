@@ -1,6 +1,6 @@
 <?php
 include '../library-process/connection.php';
-if (!isset($_SESSION['username']))
+if ($_SESSION['login']==0)
 {
     header("Location: ../module-landing/landing.php");
     die();
