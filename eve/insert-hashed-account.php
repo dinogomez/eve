@@ -1,6 +1,13 @@
+<?php
+
+  require_once 'library-process/connection.php';
+  session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="icon" href="library-resource/img/pol_thumbnail.png">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -19,11 +26,20 @@
             <a class="d-inline float-right font-weight-bold btn btn-primary mt-3" href="index.php">Return</a>
 
           </div>
-      >
+
           <h6 class="card-subtitle mb-2 ml-3 text-muted small fontsub">@POL - use this to insert a hashed account to the database</h6>
 
          </div>
         <div class="card-body">
+          <!-- <div class="row">
+              <div class="col-sm-3">
+                <p class="mt-1" style="color:red">Use Default Connection:</p>
+              </div>
+              <div class="" style="margin-left: -50px; margin-bottom: 5px;">
+                <input class="btn btn-danger mb-1"type="submit" name="connectnormal" value="connect">
+
+              </div>
+          </div>
           <div class="row">
               <div class="col-sm-3">
                 <p class="mt-1" style="color:red">Adjust Connection Settings:</p>
@@ -35,7 +51,7 @@
                   <input type="text" name="" value="" placeholder="table_name">
                   <input class="btn btn-danger mb-1"type="submit" name="submitdebug" value="connect">
               </div>
-          </div
+          </div> -->
           <form method="POST">
             <div class="form-group">
               <label for="formGroupExampleInput2">Permission</label>
@@ -79,48 +95,65 @@
         </div>
 
           <div class="jumbotron">
+
+            <form action="" method="POST">
+                <input type="submit"  name="checkcon" value="Check Connection">
+
+            </form>
+
+            <br>
             <?php
 
 
-            // $N = 1;
-            //
-            // if ($N == 1) {
-            //
-            //   $server = "localhost";
-            //   $dbuser = "gtech.dp";
-            //   $dbpass = "dp";
-            //   $dbname = "paulodb";
-            //
-            //   $conn = mysqli_connect($server, $dbuser, $dbpass, $dbname);
-            //
-            //   if (!$conn) {
-            //    die("Connection failed: " . mysqli_connect_error());
-            //   }
-            //
-            // } elseif ($N == 0) {
-            //
-            //     $server = "localhost";
-            //     $dbuser = "root";
-            //     $dbpass = "";
-            //
-            //     $dbname = "otso";
-            //
-            //     $conn = mysqli_connect($server, $dbuser, $dbpass, $dbname);
-            //
-            //     //if connection fails disconnect
-            //     if (!$conn) {
-            //      die("Connection failed: " . mysqli_connect_error());
-            //     }
-            //   }
+
 
             date_default_timezone_set('Asia/Manila');
             echo "<span style='color:red'>Debug Console</span>";
             echo "<hr>";
-            if (isset($_POST['submitdebug'])) {
 
-              print date('h:i').": ";
-              echo $_POST['username'];
+            if (isset($_POST['submitdebug'])) {
+              echo "<span style='color:green'>".date('h:i').":</span> "."<strong>debug_permission: </strong> ".$_POST['permission']."<br>";
+              echo "<span style='color:green'>".date('h:i').":</span> "."<strong>debug_username: </strong> ".$_POST['username']."<br>";
+              echo "<span style='color:green'>".date('h:i').":</span> "."<strong>debug_password: </strong> ".$_POST['password']."<br>";
+              echo "<span style='color:green'>".date('h:i').":</span> "."<strong>debug_fname: </strong> ".$_POST['fname']."<br>";
+              echo "<span style='color:green'>".date('h:i').":</span> "."<strong>debug_mname: </strong> ".$_POST['mname']."<br>";
+              echo "<span style='color:green'>".date('h:i').":</span> "."<strong>debug_lname: </strong> ".$_POST['lname']."<br>"."<br>";
+
+              $hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+              echo "<span class='small' style='color:red'>HASHING PASSWORD</span>"."<br>";
+
+              echo "<span style='color:green'>".date('h:i').":</span> "."<strong>debug_password_hashed: </strong> ".$hash."<br><br>";
+
+
+              $permission = mysqli_real_escape_string($conn,$_POST['permission']);
+              $username = mysqli_real_escape_string($conn,$_POST['username']);
+              $fname = mysqli_real_escape_string($conn,$_POST['fname']);
+              $mname = mysqli_real_escape_string($conn,$_POST['mname']);
+              $lname = mysqli_real_escape_string($conn,$_POST['lname']);
+
+
+              $sql= "INSERT INTO users (permission, username, password, firstName,middleName, lastName)
+              VALUES ('$permission', '$username', '$hash', '$fname', '$mname', '$lname')";
+
+              $resulti = mysqli_query($conn,$sql);
+
+              if ($resulti) {
+                  echo "<span class='font-weight-bold' style='color:green'>Account Inserted to DB</span>";
+              } else {
+                  echo "<span class='font-weight-bold' style='color:red'>Insertion Failed: </span>"."<span class='small' >".mysqli_error($conn)."</span>";
+              }
             }
+
+            if (isset($_POST["checkcon"]))
+              {
+
+                if ($conn) {
+                  echo date('h:i').": ";
+                  echo "<span style='color:green'>Connected to Server.</span>";
+
+                }
+
+              }
 
 
 
