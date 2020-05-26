@@ -19,7 +19,11 @@
             </ul> -->
             <ul class="navbar-nav navlist">
               <li class="nav-item">
-                  <a class="nav-text navlink" href="changelog.php">Changelog</a>
+                  <a class="nav-text navlink" href="../debug-tools/"><span class="small" style="color:Red;">debug menu</span>
+</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-text navlink disabled" href="changelog.php">Changelog</a>
               </li>
               <li class="nav-item">
               </li>
