@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark  navbar-custom shadow rounded row fixed-top mb-5">
 
 
-    <div class=" col-lg-10">
+    <div class=" col-lg-9">
       <a href="../index.php" class="navbar-brand nav-title"><span class="yellow">.</span>EVE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
               <span class="navbar-toggler-icon"></span>
