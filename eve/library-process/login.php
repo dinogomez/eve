@@ -2,7 +2,6 @@
 include_once '../library-process/gencode.php';
 include_once '../library-process/connection.php';
 
-if(isset($_POST['submit'])){
 
 
   $username = mysqli_real_escape_string($conn,$_POST['username']);
@@ -10,7 +9,7 @@ if(isset($_POST['submit'])){
 
   if($username!="" && $password!=""){
     //sql statment to be queried
-    $sql = "SELECT * FROM users WHERE username ='$username' AND password = '$password'";
+    $sql = "SELECT * FROM users WHERE username ='$username'";
     //mysqli_query is a mysql function that sends a query request to the database
     //it requires two parameters,
     //@1. the mysqli_connect status which is stored in $conn variable found on "connections.php".
@@ -25,10 +24,9 @@ if(isset($_POST['submit'])){
     //a match of "1" means a record that matches the input parameter is present marking a correct login
     $count = mysqli_num_rows($result);
 
-    echo $count;
 
     //retrieving name from database for session storage
-    $sql = "SELECT firstName,middleName,lastName,permission FROM users WHERE username ='$username' AND password = '$password'";
+    $sql = "SELECT firstName,middleName,lastName,permission,password FROM users WHERE username ='$username'";
     $result = mysqli_query($conn,$sql);
 
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -39,30 +37,34 @@ if(isset($_POST['submit'])){
       $_SESSION['permission'] = $row['permission'];
       //concatenate names
       $_SESSION['fullName'] = $_SESSION['firstName'].' '.  $_SESSION['middleName'].' '.$_SESSION['lastName'];
+      $hash = $row['password'];
 
+      echo "hash:".$hash;
+      echo "password:".$password;
    }
 
 
         //setSession to LOGIN
-        $_SESSION['login'] = 1;
         //standard href redireton
         if ($count==1) {
-          $token = token_keygen(17,7);
-          //set current login user
-          $_SESSION['username'] = $username;
-          $_SESSION['token'] = $token;
 
-          echo $_SESSION['username'];
-          echo $_SESSION['token'];
+          if (password_verify($password, $hash)) {
+            $_SESSION['username'] = $username;
+            $_SESSION['login'] = 1;
+            $_SESSION['failedLogin']== 1;
+            }
+           else {
+             $_SESSION['login'] = 0;
+             $error_msg = "<div class='login-modal'>Username or password is incorrect</div>";
+             $script = "<script> $(document).ready(function(){ $('#exampleModal').modal('show'); }); </script>";
 
-            
-          header('Location: ../module-student/student-home.php');
+          }
 
         } else {
           echo "error";
         }
   }
-}
+
 
 
  ?>

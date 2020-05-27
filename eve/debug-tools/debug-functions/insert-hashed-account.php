@@ -1,11 +1,11 @@
 <?php
-require_once '../library-process/connection.php';
+require_once '../../library-process/connection.php';
 
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="icon" href="library-resource/img/pol_thumbnail.png">
+    <link rel="icon" href="../../library-resource/img/pol_thumbnail.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,13 +16,13 @@ require_once '../library-process/connection.php';
 
       <div class="card shadow mt-5 ">
         <div class="card-header">
-          <img src="../library-resource/img/pol_thumbnail.png" alt="404" class="img-thumbnail rounded float-left mr-2" style="width:100px; height:100px;">
+          <img src="../../library-resource/img/pol_thumbnail.png" alt="404" class="img-thumbnail rounded float-left mr-2" style="width:100px; height:100px;">
 
           <div class="card-title ml-5 mt-3">
             <h2 class="d-inline mt-5"><span style="color:red">DEBUG</span> - insert account w/ hash </h2>
 
 
-            <a class="d-inline float-right font-weight-bold btn btn-primary mt-3" href="index.php">Return</a>
+            <a class="d-inline float-right font-weight-bold btn btn-primary mt-3" href="../index.php">Return</a>
 
           </div>
 
