@@ -90,7 +90,7 @@
                                        <a href="#">My Events  <span class="badge badge-pill badge-success ">1</span></a>
                                    </li>
                                    <li>
-                                       <a href="#" id="createEventLink">Event Application</a>
+                                       <a href="../../module-events/event-creation/create-event.php">Event Application</a>
                                    </li>
                                </ul>
                            </div>

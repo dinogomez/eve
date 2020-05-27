@@ -45,7 +45,6 @@ if(isset($_POST['logout'])){
          <div class="form-group">
            <label for="formGroupExampleInput2">Purpose of Visit</label>
            <select class="custom-select" name="purpose">
-             <option selected>Purpose of Visit</option>
              <option value="School Tour">School Tour</option>
              <option value="Registrar">Registrar</option>
              <option value="Event">Event</option>
@@ -67,14 +66,13 @@ if(isset($_POST['logout'])){
            <input type="text" class="form-control" name="contactnum" placeholder="optional">
          </div>
 
-
-                 <div class="container mt-4">
-                   <div class="row">
-                     <div class="col text-center">
-                       <input class="btn btn-custom-purple shadow" id="submit" type="submit" name="register" value="Confirm"style="width: 100px;">
-                     </div>
-                   </div>
-                 </div>
+         <div class="container mt-4">
+           <div class="row">
+             <div class="col text-center">
+               <input class="btn btn-custom-purple shadow" id="submit" type="submit" name="register" value="Confirm"style="width: 100px;">
+             </div>
+           </div>
+         </div>
 
    </form>
  </div>

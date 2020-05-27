@@ -46,10 +46,6 @@ $(document).ready(function(){
 </script>
  <div class="container mt-5" id="register">
 
-
-
-
-
      <div class="container jumbocontatiner shadow p-5 visit" id="visit">
      <h2 class="blog-post-title text-center">Visit Registration</h2>
      <p class="blog-post-meta text-center">Please fill up the following</p>

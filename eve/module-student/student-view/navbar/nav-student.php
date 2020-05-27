@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark  navbar-custom shadow rounded row fixed-top mb-5">
 
 
-    <div class=" col-lg-10">
+    <div class=" col-lg-9">
       <a href="../index.php" class="navbar-brand nav-title"><span class="yellow">.</span>EVE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
               <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,11 @@
             </ul> -->
             <ul class="navbar-nav navlist">
               <li class="nav-item">
-                  <a class="nav-text navlink" href="changelog.php">Changelog</a>
+                  <a class="nav-text navlink" href="../debug-tools/"><span class="small" style="color:Red;">debug menu</span>
+</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-text navlink disabled" href="changelog.php">Changelog</a>
               </li>
               <li class="nav-item">
               </li>

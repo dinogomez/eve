@@ -24,6 +24,11 @@ function CheckForNull(){
     }
   }
 
+function DeleteConfirmation(){
+  if(confirm("Are you sure to delete this permanently?"))
+    console.log('delete permanently');
+}
+
   //VAR I STARTS AT INDEX 1 BECAUSE DATE IS NOT YET CHECKED.
 
 }

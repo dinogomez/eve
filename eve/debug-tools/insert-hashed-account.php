@@ -1,7 +1,6 @@
 <?php
+require_once '../library-process/connection.php';
 
-  require_once 'library-process/connection.php';
-  session_start();
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -17,7 +16,7 @@
 
       <div class="card shadow mt-5 ">
         <div class="card-header">
-          <img src="library-resource/img/pol_thumbnail.png" alt="404" class="img-thumbnail rounded float-left mr-2" style="width:100px; height:100px;">
+          <img src="../library-resource/img/pol_thumbnail.png" alt="404" class="img-thumbnail rounded float-left mr-2" style="width:100px; height:100px;">
 
           <div class="card-title ml-5 mt-3">
             <h2 class="d-inline mt-5"><span style="color:red">DEBUG</span> - insert account w/ hash </h2>
