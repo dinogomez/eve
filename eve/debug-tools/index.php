@@ -24,10 +24,10 @@
           <div class="row mt-3">
 
               <div class="col-4">
-                <div class="card">
+                <div class="card h-100">
                   <div class="card-header text-center">
                     <h4 class="card-title">Insert Hashed Account</h4>
-                    <h4 class="card-subtitle small" style="color:green">Functional (Needs Rework)</h4>
+                    <h4 class="card-subtitle small" style="color:green">@POL-Functional (Needs Rework)</h4>
 
                   </div>
                   <div class="card-body">
@@ -37,14 +37,36 @@
                     </p>
                   </div>
                   <div class="card-footer text-center">
-                    <a href="insert-hashed-account.php" class="btn btn-success">Select</a>
+                    <a href="debug-functions/insert-hashed-account.php" class="btn btn-success">Select</a>
 
                   </div>
                 </div>
               </div>
 
               <div class="col-4">
-                <div class="card">
+                <div class="card h-100">
+                  <div class="card-header text-center">
+                    <h4 class="card-title">Reset Password</h4>
+                    <h4 class="card-subtitle small" style="color:green">@POL-Functional</h4>
+
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-center small">
+
+                        Use this to reset password from the database.<br>
+                        Use this tool if you forget your password.
+
+                    </p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="debug-functions/reset-password.php" class="btn btn-success">Select</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="card h-100">
                   <div class="card-header text-center">
                     <h4 class="card-title">Approve Selected Events</h4>
                     <h4 class="card-subtitle small" style="color:red">Indevelopment</h4>
@@ -64,28 +86,32 @@
                   </div>
                 </div>
               </div>
+          </div>
 
-              <div class="col-4">
-                <div class="card">
-                  <div class="card-header text-center">
-                    <h4 class="card-title">Checkout Checkin Debug </h4>
-                    <h4 class="card-subtitle small" style="color:red">Indevelopment</h4>
+          <div class="row mt-3">
 
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text text-center small">
-                      <br>
-                      Module not Committed
-                      <br>
-                      <br>
-                    </p>
-                  </div>
-                  <div class="card-footer text-center">
-                    <a href="insert-hashed-account.php" class="btn btn-danger disabled">Select</a>
+            <div class="col-4">
+              <div class="card h-100">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Checkout Checkin Debug</h4>
+                  <h4 class="card-subtitle small" style="color:red">Indevelopment</h4>
 
-                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-center small">
+                    <br>
+                    Module not Committed
+                    <br>
+                    <br>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="insert-hashed-account.php" class="btn btn-danger disabled">Select</a>
+
                 </div>
               </div>
+            </div>
+
           </div>
         </div>
 
