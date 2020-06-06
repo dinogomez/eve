@@ -52,6 +52,9 @@ include_once '../library-process/connection.php';
             $_SESSION['username'] = $username;
             $_SESSION['login'] = 1;
             $_SESSION['failedLogin']== 1;
+
+
+
             }
            else {
              $_SESSION['login'] = 0;
@@ -61,7 +64,8 @@ include_once '../library-process/connection.php';
           }
 
         } else {
-          echo "error";
+          $error_msg = "<div class='login-modal'>Username or password is incorrect</div>";
+          $script = "<script> $(document).ready(function(){ $('#exampleModal').modal('show'); }); </script>";
         }
   }
 

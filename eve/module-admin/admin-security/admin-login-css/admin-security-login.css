@@ -14,23 +14,11 @@ body {
 /* PT sans
 font-family: 'PT Sans', sans-serif;
  */
-
- .righteous{
-   font-family: 'Righteous', sans-serif;
+ .resized{
+   margin-top: 10px;
+   font-size: 45px;
  }
 
- .bd-example {
-   height: 500px;
-   width: 500px;
-
- }
-
- .item img {
-     position: absolute;
-     top: 0;
-     left: 0;
-     min-height: 300px;
- }
 .btn-edit{
   width: 90px;
 }
@@ -86,7 +74,6 @@ font-family: 'PT Sans', sans-serif;
   margin-bottom: -100;
   width: 100px;
 }
-
 .navbar-custom{
   background-color: black;
 }
@@ -380,7 +367,7 @@ body {
 .sidebar-wrapper {
   width: 260px;
   height: 100%;
-  padding-top: 5%;
+  padding-top: 3.5%;
   max-height: 100%;
   position: fixed;
   top: 0;

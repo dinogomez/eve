@@ -141,7 +141,7 @@ $(document).ready(function(){
          //it requires two parameters,
          //@1. the mysqli_connect status which is stored in $conn variable found on "connections.php".
          //@2. the sql statement  which is a string stored on the $sql variable
-         $result = mysqli_query($conn,$sql);
+                                  $result = mysqli_query($conn,$sql);
          //the query result is stored in the $result variable.
          //The fetch_array() / mysqli_fetch_array() function fetches a result row as an associative array, a numeric array,.
          //it requires the query result status and the MYSQLI_ASSOC "MYSQLI_ASSOC = Array items will use the column name as an index key."
@@ -151,7 +151,7 @@ $(document).ready(function(){
          $count = mysqli_num_rows($result);
          $rownum = 1;
          //retrieving name from database for session storage
-         $result = mysqli_query($conn,$sql);
+                      $result = mysqli_query($conn,$sql);
          if($count == 0){
           echo "<tr>
                   <td colspan = '5'>
@@ -193,40 +193,7 @@ $(document).ready(function(){
  </div>
 
 
-     <!-- <div class="col-sm-3 offset-sm-1 blog-sidebar">
-       <div class="sidebar-module sidebar-module-inset">
-         <h4>About</h4>
-         <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-       </div>
-       <div class="sidebar-module">
-         <h4>Archives</h4>
-         <ol class="list-unstyled">
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">March 2014</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">February 2014</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">January 2014</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">December 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">November 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">October 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">September 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">August 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">July 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">June 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">May 2013</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">April 2013</a></li>
-         </ol>
-       </div>
-       <div class="sidebar-module">
-         <h4>Elsewhere</h4>
-         <ol class="list-unstyled">
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">GitHub</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">Twitter</a></li>
-           <li><a href="https://v4-alpha.getbootstrap.com/examples/blog/#">Facebook</a></li>
-         </ol>
-       </div>
-     </div><!-- /.blog-sidebar -->
 
-
- <!-- /.container -->
 <?php
 
 

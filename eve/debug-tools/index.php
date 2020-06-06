@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="icon" href="../library-resource/img/pol_thumbnail.png">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
     <div class="container mt-5">
-
       <div class="card">
+<?php // TODO:  Add Debug Function Regulation
 
+// FIXME: 
+
+
+
+?>
           <div class="card-header">
             <a class="float-right btn btn-danger" href="../" >X</a>
 
@@ -59,7 +66,7 @@
                     </p>
                   </div>
                   <div class="card-footer text-center">
-                    <a href="debug-functions/reset-password.php" class="btn btn-success">Select</a>
+                    <a href="debug-functions/reset-password/reset-password.php" class="btn btn-success">Select</a>
 
                   </div>
                 </div>

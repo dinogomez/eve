@@ -14,8 +14,8 @@
 
     //CHECK LOGIN
     if ($_SESSION['login'] == 0) {
-    }else if ($_SESSION['login'] == 1){
-      header('Location:../module-student/student-home.php');
+    } elseif ($_SESSION['login'] == 1) {
+        header('Location:../module-student/student-home.php');
     }
 
     include_once 'container-what-is-eve.php';
@@ -25,5 +25,3 @@
     require_once 'module-landing-view/modal/login-modal.php';
       //FOOTER BLOCK
     require_once 'module-landing-view/footer/footer-main.php';
-
-?>

@@ -7,29 +7,29 @@
 
    // registration variables, with mysqli to prevent SQL Attack
 
-         $firstname = mysqli_real_escape_string($conn,$_POST['firstname']);
-         $middlename = mysqli_real_escape_string($conn,$_POST['middlename']);
-         $lastname = mysqli_real_escape_string($conn,$_POST['lastname']);
-         $email = mysqli_real_escape_string($conn,$_POST['email']);
-         $date = mysqli_real_escape_string($conn,$_POST['date']);
+         $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+         $middlename = mysqli_real_escape_string($conn, $_POST['middlename']);
+         $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+         $email = mysqli_real_escape_string($conn, $_POST['email']);
+         $date = mysqli_real_escape_string($conn, $_POST['date']);
          // //we need to cast date variable because MYSQL Date format is YYY-MMM-DDD
-         $date=date('Y-m-d',strtotime($date));
-         $purpose = mysqli_real_escape_string($conn,$_POST['purpose']);
-         $idgiven = mysqli_real_escape_string($conn,$_POST['idgiven']);
-         $contactnum = mysqli_real_escape_string($conn,$_POST['contactnum']);
-         $generatekey = guest_keygen(6,2);
+         $date=date('Y-m-d', strtotime($date));
+         $purpose = mysqli_real_escape_string($conn, $_POST['purpose']);
+         $idgiven = mysqli_real_escape_string($conn, $_POST['idgiven']);
+         $contactnum = mysqli_real_escape_string($conn, $_POST['contactnum']);
+         $generatekey = guest_keygen(6, 2);
 
 
 
          // //we need to cast date variable because MYSQL Date format is YYY-MMM-DDD
 
-         if(isset($_POST['register'])){
-           $_SESSION['isRegistered'] = 1;
-               }
+         if (isset($_POST['register'])) {
+             $_SESSION['isRegistered'] = 1;
+         }
 
 
                      if ($_SESSION['isRegistered'] != 1) {
-                       header('Location: ../module-landing/landing.php');
+                         header('Location: ../module-landing/landing.php');
                      }
       $_SESSION['isRegistered'] = 0;
 
@@ -47,6 +47,7 @@ require_once 'module-guest-view/navbar/nav-main.php';
 
 
 ?>
+
 
 
     <!-- nav -->
