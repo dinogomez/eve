@@ -20,6 +20,10 @@
             </ul> -->
             <ul class="navbar-nav">
               <li class="nav-item">
+                  <a class="nav-text navlink" href="../debug-tools/"><span class="small" style="color:Red;">debug menu</span>
+</a>
+              </li>
+              <li class="nav-item">
                   <a class="nav-text navlink" href="../module-landing/changelog.php">Changelog</a>
               </li>
               <li class="nav-item">

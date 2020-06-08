@@ -1,4 +1,6 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"  aria-hidden="true">
+<?php if(isset($script)){ echo $script; } ?>
+
+<div class="modal fade in" id="exampleModal" tabindex="-1" role="dialog"  aria-hidden="true">
   <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header text-center">
@@ -8,8 +10,12 @@
           <form class="loginform" action="" method="post">
               <!-- HEADER -->
 
+
               <!-- FIRST INPUT DIV // USERNAME -->
-            <div class="container mt-4">
+              <div class="text-center mt-2">
+                <?php if(isset($error_msg)){ echo '<span style="color:red;">'.$error_msg.'</span>'; } ?>
+              </div>
+            <div class="container mt-1">
                 <div class="row">
                   <!-- USER ICON -->
                   <div class="col-1">
