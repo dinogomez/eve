@@ -4,8 +4,8 @@ include_once '../library-process/connection.php';
 
 
 
-  $username = mysqli_real_escape_string($conn,$_POST['username']);
-  $password = mysqli_real_escape_string($conn,$_POST['password']);
+  @$username = mysqli_real_escape_string($conn,$_POST['username']);
+  @$password = mysqli_real_escape_string($conn,$_POST['password']);
 
   if($username!="" && $password!=""){
     //sql statment to be queried
