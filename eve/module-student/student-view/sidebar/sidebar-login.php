@@ -102,44 +102,9 @@
                                </ul>
                            </div>
                        </li>
-                       <li class="sidebar-dropdown">
-                           <a href="#">
-                               <i class="fa fa-shopping-cart"></i>
-                               <span>Events</span>
-                               <span class="badge badge-pill badge-primary">3</span>
-                           </a>
-                           <div class="sidebar-submenu">
-                               <ul>
-                                   <li>
-                                       <a href="#">Events List
-                                         <span class="badge badge-pill badge-warning">2</span>
-                                       </a>
-                                   </li>
-                                   <li>
-                                       <a href="#">My Events  <span class="badge badge-pill badge-success ">1</span></a>
-                                   </li>
-                                   <li>
-                                       <a href="#">Event Application</a>
-                                   </li>
-                               </ul>
-                           </div>
-                       </li>
 
                        <li class="header-menu">
                            <span>Extra</span>
-                       </li>
-                       <li>
-                           <a href="#">
-                               <i class="fa fa-calendar"></i>
-                               <span>Calendar</span>
-                           </a>
-                       </li>
-
-                       <li>
-                           <a href="#">
-                               <i class="fa fa-book"></i>
-                               <span>Documentation</span>
-                           </a>
                        </li>
                        <li>
                            <a href="#">

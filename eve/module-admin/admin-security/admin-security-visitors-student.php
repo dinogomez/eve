@@ -6,7 +6,7 @@
   //SIDEBAR
   require_once 'admin-view/sidebar/sidebar-admin.php';
   //PAGE CONTENT
-  require_once 'admin-view/content/content-admin-security-visitors.php';
+  require_once 'admin-view/content/content-admin-security-visitors-students.php';
   //LOGOUT MODAL
   require_once 'admin-view/modal/logout-modal.php';
   //FOOTER
