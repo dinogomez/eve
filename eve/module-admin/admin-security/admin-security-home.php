@@ -1,9 +1,4 @@
 <?php
-  require_once '../../library-process/connection.php';
-  require_once '../../library-process/authenticate_token.php';  // Check user token
-?>
-
-<?php
   //HEADER
   require_once 'admin-view/header/header-welcome-login.php';
   //NAVBAR
@@ -11,7 +6,7 @@
   //SIDEBAR
   require_once 'admin-view/sidebar/sidebar-admin.php';
   //PAGE CONTENT
-  require_once 'admin-view/content/content-admin.php';
+  require_once 'admin-view/content/content-admin-security.php';
   //LOGOUT MODAL
   require_once 'admin-view/modal/logout-modal.php';
   //FOOTER

@@ -71,4 +71,6 @@ function realtimeDate(){
 
   today = mm+'/'+dd+'/'+yyyy;
   document.getElementById("date").innerHTML = today;
+  var myVar=setInterval(function(){myTimer()},1000);
+
 }

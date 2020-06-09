@@ -14,20 +14,13 @@
 
       <!-- SIDEBAR HEADER  -->
       <div class="sidebar-header">
-        <div class="user-info text-center w-100">
-          <span class="user-name"><strong><?php echo $_SESSION['fullName'] ?></strong></span>
-          <span class="user-name"><?php echo $_SESSION['username']; ?></span>
-          <span class="user-role">
-            <?php if ($_SESSION['permission'] == 1) {
-              echo "Administrator";
-                } else {
-                    echo "Student";
-                }; ?>
-          </span>
+        <div class="user-pic">
 
-          <span class="user-status">
-            <i class="fa fa-circle"></i><span>Online</span></span>
-
+        </div>
+        <div class="user-info">
+          <span class="user-name"><?php echo "Dummy Kean User"; ?></span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status"><i class="fa fa-circle"></i><span>Online</span></span>
         </div>
       </div>
 
@@ -52,7 +45,7 @@
             <span>General</span>
           </li>
           <li>
-            <a href="admin-home.php">
+            <a href="#">
               <i class="fa fa-home"></i>
               <span>Home</span>
             </a>
@@ -61,28 +54,29 @@
           <li class="sidebar-dropdown">
             <a href="#">
               <i class="fa fa-book"></i>
-              <span>Event Diary</span>
+              <span>Visitors</span>
             </a>
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#">All Events</a>
-                </li>
-                <li>
-                  <a href="#">Create Events</a>
-                </li>
-                <li>
-                  <a href="#">Pending Events</a>
+                  <a href="admin-security-visitors.php">View Current Visitors</a>
                 </li>
               </ul>
             </div>
           </li>
 
-          <li>
+          <li class="sidebar-dropdown">
             <a href="#">
-              <i class="far fa-ticket"></i>
-              <span>Ticket</span>
+              <i class="fa fa-book"></i>
+              <span>Events</span>
             </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="admin-security-events.php">View Ongoing Events</a>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <!-- SIDEBAR EXTRA -->
