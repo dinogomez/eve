@@ -14,13 +14,20 @@
 
       <!-- SIDEBAR HEADER  -->
       <div class="sidebar-header">
-        <div class="user-pic">
+        <div class="user-info text-center w-100">
+          <span class="user-name"><strong><?php echo $_SESSION['fullName'] ?></strong></span>
+          <span class="user-name"><?php echo $_SESSION['username']; ?></span>
+          <span class="user-role">
+            <?php if ($_SESSION['permission'] == 1) {
+              echo "Administrator";
+                } else {
+                    echo "Student";
+                }; ?>
+          </span>
 
-        </div>
-        <div class="user-info">
-          <span class="user-name">John <strong>Rada</strong></span>
-          <span class="user-role">Administrator</span>
-          <span class="user-status"><i class="fa fa-circle"></i><span>Online</span></span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i><span>Online</span></span>
+
         </div>
       </div>
 
@@ -45,7 +52,7 @@
             <span>General</span>
           </li>
           <li>
-            <a href="#">
+            <a href="admin-home.php">
               <i class="fa fa-home"></i>
               <span>Home</span>
             </a>
