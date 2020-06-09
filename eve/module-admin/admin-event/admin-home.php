@@ -1,4 +1,9 @@
 <?php
+  require_once '../../library-process/connection.php';
+  require_once '../../library-process/authenticate_token.php';  // Check user token
+?>
+
+<?php
   //HEADER
   require_once 'admin-view/header/header-welcome-login.php';
   //NAVBAR
