@@ -3,12 +3,20 @@
   function getListing(){
     @include('../../library-process/connection.php');
 
-    $query = 'SELECT * FROM user_school_visit ORDER BY dateOfVisit DESC';
+    $query = 'SELECT * FROM user_school_visit WHERE dateOfVisit = ?';
     $pStatement = $conn->prepare($query);
+    $dateNow = date('Y-m-d');
+    $pStatement->bind_param('s', $dateNow);
     $pStatement->execute();
     $result = $pStatement->get_result();
 
     while($row = $result->fetch_assoc()){
+      $action = null;
+      if($row['status'] == 'checkedIn' || $row['status'] == 'complete')
+        $action = 'CheckedIn/Complete';
+      else {
+        $action = '<a href="admin-security-dashboard.php?onCheckIn='.$row['guestcode'].'&type=student" class="btn btn-secondary" style="margin-right:5px ">Check-In</a>';
+      }
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
@@ -24,10 +32,9 @@
                   <h6>'.$row['dateOfVisit'].'</h6>
                 </div>
                 <div class="col-1">
-                  <a href="" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>
+                  '.$action.'
                 </div>
                 <div class="col-1">
-                  <a href="" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>
                 </div>
               </div>
             </div>';
@@ -37,15 +44,22 @@
   function searchVisitor($searchInput){
     @include('../../library-process/connection.php');
 
-    $query = 'SELECT * FROM user_school_visit WHERE firstName LIKE ? OR lastName LIKE ? OR guestcode LIKE ? ORDER BY dateOfVisit DESC';
+    $query = 'SELECT * FROM user_school_visit WHERE firstName LIKE ? AND dateOfVisit = ? OR lastName LIKE ? OR guestcode LIKE ? ORDER BY dateOfVisit DESC';
     $pStatement = $conn->prepare($query);
     $searchInput = '%'.$searchInput.'%';
-    $pStatement->bind_param('sss', $searchInput, $searchInput,$searchInput);
+    $dateNow = date('Y-m-d');
+    $pStatement->bind_param('ssss', $searchInput, $dateNow, $searchInput,$searchInput);
     $pStatement->execute();
     $result = $pStatement->get_result();
     if($result->num_rows == 0)
       return "no result";
     while($row = $result->fetch_assoc()){
+      $action = null;
+      if($row['status'] == 'checkedIn' || $row['status'] == 'complete')
+        $action = 'CheckedIn/Complete';
+      else {
+        $action = '<a href="admin-security-dashboard.php?onCheckIn='.$row['guestcode'].'&type=student" class="btn btn-secondary" style="margin-right:5px ">Check-In</a>';
+      }
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
@@ -61,29 +75,33 @@
                   <h6>'.$row['dateOfVisit'].'</h6>
                 </div>
                 <div class="col-1">
-                  <a href="" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>
+                  '.$action.'
                 </div>
                 <div class="col-1">
-                  <a href="" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>
                 </div>
               </div>
             </div>';
     }
-
-
   }
 
   function getListingByPurpose($value){
     @include('../../library-process/connection.php');
 
-    $query = 'SELECT * FROM user_school_visit WHERE purpose LIKE ? ORDER BY dateOfVisit DESC';
+    $query = 'SELECT * FROM user_school_visit WHERE purpose LIKE ? AND dateOfVisit = ?';
     $pStatement = $conn->prepare($query);
     $searchInput = '%'.$value.'%';
-    $pStatement->bind_param('s', $searchInput);
+    $dateNow = date('Y-m-d');
+    $pStatement->bind_param('ss', $searchInput, $dateNow);
     $pStatement->execute();
     $result = $pStatement->get_result();
 
     while($row = $result->fetch_assoc()){
+      $action = null;
+      if($row['status'] == 'checkedIn' || $row['status'] == 'complete')
+        $action = 'CheckedIn/Complete';
+      else {
+        $action = '<a href="admin-security-dashboard.php?onCheckIn='.$row['guestcode'].'&type=student" class="btn btn-secondary" style="margin-right:5px ">Check-In</a>';
+      }
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
@@ -99,10 +117,9 @@
                   <h6>'.$row['dateOfVisit'].'</h6>
                 </div>
                 <div class="col-1">
-                  <a href="" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>
+                  '.$action.'
                 </div>
                 <div class="col-1">
-                  <a href="" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>
                 </div>
               </div>
             </div>';

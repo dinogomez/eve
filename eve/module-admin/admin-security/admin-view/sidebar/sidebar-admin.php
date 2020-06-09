@@ -45,10 +45,27 @@
             <span>General</span>
           </li>
           <li>
-            <a href="#">
+            <a href="admin-security-home.php">
               <i class="fa fa-home"></i>
               <span>Home</span>
             </a>
+          </li>
+
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Dashboard</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="admin-security-dashboard.php">View Checked-in Visitors</a>
+                </li>
+                <li>
+                  <a href="admin-security-dashboard-pending.php">View Pending Visitors</a>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <li class="sidebar-dropdown">
@@ -59,21 +76,10 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="admin-security-visitors.php">View Current Visitors</a>
+                  <a href="admin-security-visitors-student.php">View Student Visitors</a>
                 </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="sidebar-dropdown">
-            <a href="#">
-              <i class="fa fa-book"></i>
-              <span>Events</span>
-            </a>
-            <div class="sidebar-submenu">
-              <ul>
                 <li>
-                  <a href="admin-security-events.php">View Ongoing Events</a>
+                  <a href="admin-security-visitors-guest.php">View Guest Visitors</a>
                 </li>
               </ul>
             </div>
@@ -82,18 +88,6 @@
           <!-- SIDEBAR EXTRA -->
           <li class="header-menu">
             <span>Extra</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-calendar"></i>
-              <span>Calendar</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-book"></i>
-              <span>Documentation</span>
-            </a>
           </li>
           <li>
             <a href="#">
