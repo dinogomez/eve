@@ -10,6 +10,18 @@ require_once 'module-guest-view/navbar/nav-main.php';
 
  ?>
 
+<script type="text/javascript">
+$(function () {
+  $("#purpose").change (function() {
+    if($(this).val() == "Meeting"){
+      $("#personToMeet").removeAttr("disabled");
+      $("#personToMeet").focus();
+    } else {
+      $("#personToMeet").attr("disabled", "disabled");
+    }
+  });
+});
+</script>
 
 
 
@@ -53,9 +65,16 @@ require_once 'module-guest-view/navbar/nav-main.php';
                       <option selected>Purpose of Visit</option>
                       <option value="School Tour">School Tour</option>
                       <option value="Registrar">Registrar</option>
-                      <option value="Event">Event</option>
+                      <!-- <option value="Event">Event</option> -->
+                      <option value="Meeting">Meeting</option>
                     </select>
                   </div>
+                  <!-- to appear if meeting is selected -->
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Person to Meet</label>
+                    <input type = "text"  class = "form-control" id = "personToMeet" disabled = "disabled" placeholder="Person to meet" required/>
+                  </div>
+
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Type of ID</label>
                     <select class="custom-select" name="idgiven">

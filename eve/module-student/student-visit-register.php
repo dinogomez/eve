@@ -43,6 +43,32 @@ $(document).ready(function(){
 
 
 });
+
+// function showField(value){
+//   var element = $(document).getElementById('purpose');
+//   if(val=='Purpose of Visit' || val=='Meeting'){
+//       element.style.display = 'block';
+//   } else {
+//       element.style.display = 'none';
+//   }
+//   // if(name=='Other')
+//   //   document.getElementById('personToMeet').innerHTML = '<input type = "text" name ="purpose" id = "purpose">';
+//   // else {
+//   //   document.getElementById('personToMeet').innerHTML = '';
+//   // }
+// }
+
+//working
+$(function () {
+  $("#purpose").change (function() {
+    if($(this).val() == "Meeting"){
+      $("#personToMeet").removeAttr("disabled");
+      $("#personToMeet").focus();
+    } else {
+      $("#personToMeet").attr("disabled", "disabled");
+    }
+  });
+});
 </script>
  <div class="container mt-5" id="register">
 
@@ -59,15 +85,24 @@ $(document).ready(function(){
            </div>
            <div class="form-group">
              <label for="formGroupExampleInput2">Purpose of Visit</label>
-             <select class="custom-select" name="purpose">
+             <select class="custom-select" name="purpose" id = "purpose">
                <option selected>Purpose of Visit</option>
                <option value="School Tour">School Tour</option>
                <option value="Registrar">Registrar</option>
-               <option value="Event">Event</option>
-               <option value="Event">Person to Visit</option>
+               <!-- <option value="Event">Event</option> no more event-->
+               <option value="Meeting">Meeting</option>
 
              </select>
            </div>
+
+            <!-- to appear if meeting is selected -->
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Person to Meet</label>
+              <input type = "text"  class = "form-control" id = "personToMeet" disabled = "disabled" placeholder="Person to meet" required/>
+            </div>
+
+
+
            <div class="form-group">
              <label for="formGroupExampleInput2">Type of ID</label>
              <select class="custom-select" name="idgiven">
@@ -83,7 +118,7 @@ $(document).ready(function(){
              <input type="email" class="form-control"  name="email"placeholder="Optional"/>
            </div>
            <div class="form-group">
-             <label for="formGroupExampleInput2">Contanct Number</label>
+             <label for="formGroupExampleInput2">Contact Number</label>
              <input type="text" class="form-control" name="contactnum" placeholder="Optional"/>
            </div>
 
