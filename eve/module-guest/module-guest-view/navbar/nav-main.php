@@ -27,7 +27,7 @@
                   <a class="nav-text navlink" href="../module-landing/changelog.php">Changelog</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-text navlink" href="module-guest/guest-visit">Guest</a>
+                  <a class="nav-text navlink" href="guest-visit.php">Guest</a>
               </li>
                 <li class="nav-item">
                     <a class="nav-text navlink" data-toggle="modal" data-target="#exampleModal" href="#">Login</a>

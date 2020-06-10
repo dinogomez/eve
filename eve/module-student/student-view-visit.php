@@ -35,13 +35,13 @@ $(document).ready(function(){
 </script>
  <div class="container mt-5" id="register">
      <div class="container jumbocontatiner shadow p-5 visit tableVisit" id="visit">
-<<<<<<< HEAD
+
      <h2 class="blog-post-title text-center">Visit Registration</h2>
      <p class="blog-post-meta text-center">Please fill up the following</p>
-=======
+
      <h2 class="blog-post-title text-center" style="color:#038cfc">Active Visit Registration</h2>
      <p class="blog-post-meta text-center">School Visitations you have lined up.</p>
->>>>>>> 3a9ccf7c526731b574b7df07b70f92098c496906
+
      <table class="table table-bordered">
        <thead>
          <tr>

@@ -40,7 +40,7 @@
                </div>
                <!-- sidebar-header  -->
                <div class="sidebar-search">
-                   <div>
+                   <!-- <div>
                        <div class="input-group">
                            <input type="text" class="form-control search-menu" placeholder="Search...">
                            <div class="input-group-append">
@@ -49,7 +49,7 @@
                                </span>
                            </div>
                        </div>
-                   </div>
+                   </div> -->
                </div>
                <!-- sidebar-search  -->
                <div class="sidebar-menu">

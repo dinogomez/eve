@@ -51,7 +51,7 @@
             <div class="container text-center ">
               <div class="row ">
                 <div class="notstudent col w-100">
-                  <a id="" href="switch\switch_register.php">Not a student?</a>
+                  <a id="" href="guest-visit.php">Not a student?</a>
                 </div>
               </div>
 

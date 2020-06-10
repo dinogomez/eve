@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS `guest_register` (
   `email` varchar(255) NOT NULL,
   `date` date NOT NULL,
   `purpose` varchar(50) NOT NULL,
+  `personToMeet` varchar(65) NOT NULL,
   `idgiven` varchar(20) NOT NULL,
   `contactnum` varchar(11) NOT NULL,
   `guestcode` varchar(6) NOT NULL
@@ -121,6 +122,7 @@ CREATE TABLE IF NOT EXISTS `user_school_visit` (
   `email` varchar(50) NOT NULL,
   `dateOfVisit` date NOT NULL,
   `purpose` varchar(80) NOT NULL,
+  `personToMeet` varchar(65) NOT NULL,
   `idType` varchar(50) NOT NULL,
   `contactNumber` varchar(11) NOT NULL,
   `guestcode` varchar(6) NOT NULL,

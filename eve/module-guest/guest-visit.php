@@ -69,11 +69,13 @@ $(function () {
                       <option value="Meeting">Meeting</option>
                     </select>
                   </div>
+
                   <!-- to appear if meeting is selected -->
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Person to Meet</label>
-                    <input type = "text"  class = "form-control" id = "personToMeet" disabled = "disabled" placeholder="Person to meet" required/>
+                    <input type = "text"  class = "form-control" id ="personToMeet" disabled ="disabled" placeholder="Person to meet" required/>
                   </div>
+
 
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Type of ID</label>

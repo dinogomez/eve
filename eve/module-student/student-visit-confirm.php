@@ -62,6 +62,7 @@ $date=date('Y-m-d',strtotime($date));
 $purpose = mysqli_real_escape_string($conn,$_POST['purpose']);
 $idgiven = mysqli_real_escape_string($conn,$_POST['idgiven']);
 $contactnum = mysqli_real_escape_string($conn,$_POST['contactnum']);
+@ ($personToMeet = mysqli_real_escape_string($conn, $_POST['personToMeet']));
 $generatekey = guest_keygen(6,2);
 
 
@@ -75,6 +76,7 @@ $generatekey = guest_keygen(6,2);
                  <h5 class="mt-3"><?php echo $firstname.' '.$middlename.' '.$lastname;?></h5>
                  <h5 class="mt-3"><?php echo $date;?></h5>
                  <h5 class="mt-3"><?php echo $purpose;?></h5>
+                 <h5 class="mt-3"><?php echo $personToMeet; ?></h5>
                  <h5 class="mt-3"><?php echo $email;?></h5>
            </div>
      </div>
@@ -99,6 +101,7 @@ $generatekey = guest_keygen(6,2);
          <input type="hidden" name="date" value="<?php echo "$date" ?>"/>
          <input type="hidden" name="email" value="<?php echo "$email" ?>"/>
          <input type="hidden" name="purpose" value="<?php echo "$purpose" ?>"/>
+         <input type="hidden" name="personToMeet" value="<?php echo "$personToMeet" ?>"/>
          <input type="hidden" name="idgiven" value="<?php echo "$idgiven" ?>"/>
          <input type="hidden" name="contactnum" value="<?php echo "$contactnum" ?>"/>
          <input type="hidden" name="generatekey" value="<?php echo "$generatekey" ?>"/>
