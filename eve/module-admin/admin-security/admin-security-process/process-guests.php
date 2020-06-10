@@ -1,4 +1,4 @@
-<?php
+ style=\'color:#fa9a00\'<?php
 
   function getListing(){
     @include('../../library-process/connection.php');
@@ -20,16 +20,16 @@
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastname'].' '.$row['firstname'].'</h5>
+                  <h5 class="mb-1" style=\'color:#fa9a00\'>'.$row['lastname'].' '.$row['firstname'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 style=\'color:#fa9a00\'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['purpose'].'</h6>
+                  <h6 style=\'color:#fa9a00\'>'.$row['purpose'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['date'].'</h6>
+                  <h6 style=\'color:#fa9a00\'>'.$row['date'].'</h6>
                 </div>
                 <div class="col-1">
                   '.$action.'
@@ -62,16 +62,16 @@
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastname'].' '.$row['firstname'].'</h5>
+                  <h5 class="mb-1" style=\'color:#fa9a00\'>'.$row['lastname'].' '.$row['firstname'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 style=\'color:#fa9a00\'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['purpose'].'</h6>
+                  <h6 style=\'color:#fa9a00\'>'.$row['purpose'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['date'].'</h6>
+                  <h6 style=\'color:#fa9a00\'>'.$row['date'].'</h6>
                 </div>
                 <div class="col-1">
                   '.$action.'
@@ -105,16 +105,16 @@
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastname'].' '.$row['firstname'].'</h5>
+                  <h5 class="mb-1" style=\'color:#fa9a00\'>'.$row['lastname'].' '.$row['firstname'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 style=\'color:#fa9a00\'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['purpose'].'</h6>
+                  <h6 style=\'color:#fa9a00\'>'.$row['purpose'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['date'].'</h6>
+                  <h6 style=\'color:#fa9a00\'>'.$row['date'].'</h6>
                 </div>
                 <div class="col-1">
                   '.$action.'
