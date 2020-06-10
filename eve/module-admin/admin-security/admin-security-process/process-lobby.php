@@ -110,16 +110,21 @@
     if($result->num_rows == 0)
       return "no result";
     while($row = $result->fetch_assoc()){
+      if ($row['typeOfVisitor'] == 'guest') {
+        $color = 'style=\'color:#fa9a00\'';
+      }else {
+        $color = 'style=\'color:#008efa\'';
+      }
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastName'].' '.$row['firstName'].'</h5>
+                  <h5 class="mb-1" '.$color.'>'.$row['lastName'].' '.$row['firstName'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 '.$color.'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                    <h6>'.$row['typeOfVisitor'].'</h6>
+                    <h6 '.$color.'>'.$row['typeOfVisitor'].'</h6>
                 </div>
                 <div class="col-2">
                   <a href="admin-security-dashboard.php?onCheckOut='.$row['guestcode'].'" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>
@@ -143,16 +148,22 @@
     if($result->num_rows == 0)
       return "no result";
     while($row = $result->fetch_assoc()){
+      $color = null;
+      if ($row['typeOfVisitor'] == 'guest') {
+        $color = 'style=\'color:#fa9a00\'';
+      }else {
+        $color = 'style=\'color:#008efa\'';
+      }
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastName'].' '.$row['firstName'].'</h5>
+                  <h5 class="mb-1" '.$color.'>'.$row['lastName'].' '.$row['firstName'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 '.$color.'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                    <h6>'.$row['typeOfVisitor'].'</h6>
+                    <h6 '.$color.'>'.$row['typeOfVisitor'].'</h6>
                 </div>
                 <div class="col-2">
                   <a href="admin-security-dashboard.php?onCheckOut='.$row['guestcode'].'" class="btn btn-secondary" style="margin-right:5px ">Check-Out</a>

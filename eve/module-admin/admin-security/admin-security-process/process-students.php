@@ -20,16 +20,16 @@
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastName'].' '.$row['firstName'].'</h5>
+                  <h5 class="mb-1" style=\'color:#008efa\'>'.$row['lastName'].' '.$row['firstName'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 style=\'color:#008efa\'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['purpose'].'</h6>
+                  <h6 style=\'color:#008efa\'>'.$row['purpose'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['dateOfVisit'].'</h6>
+                  <h6 style=\'color:#008efa\'>'.$row['dateOfVisit'].'</h6>
                 </div>
                 <div class="col-1">
                   '.$action.'
@@ -63,16 +63,16 @@
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastName'].' '.$row['firstName'].'</h5>
+                  <h5 class="mb-1" style=\'color:#008efa style=\'color:#008efa\'\'>'.$row['lastName'].' '.$row['firstName'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 style=\'color:#008efa\'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['purpose'].'</h6>
+                  <h6 style=\'color:#008efa\'>'.$row['purpose'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['dateOfVisit'].'</h6>
+                  <h6 style=\'color:#008efa\'>'.$row['dateOfVisit'].'</h6>
                 </div>
                 <div class="col-1">
                   '.$action.'
@@ -105,16 +105,16 @@
       echo '<div class="alert alert-shadow flex-column align-items-start shadow" role="alert">
               <div class="row">
                 <div class="col-4">
-                  <h5 class="mb-1">'.$row['lastName'].' '.$row['firstName'].'</h5>
+                  <h5 class="mb-1" style=\'color:#008efa\'>'.$row['lastName'].' '.$row['firstName'].'</h5>
                 </div>
                 <div class="col-2">
-                   <h6>'.$row['guestcode'].'</h6>
+                   <h6 style=\'color:#008efa\'>'.$row['guestcode'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['purpose'].'</h6>
+                  <h6 style=\'color:#008efa\'>'.$row['purpose'].'</h6>
                 </div>
                 <div class="col-2">
-                  <h6>'.$row['dateOfVisit'].'</h6>
+                  <h6 style=\'color:#008efa\'>'.$row['dateOfVisit'].'</h6>
                 </div>
                 <div class="col-1">
                   '.$action.'

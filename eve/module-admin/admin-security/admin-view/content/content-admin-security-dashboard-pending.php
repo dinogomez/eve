@@ -3,7 +3,7 @@
   <main class="page-content">
     <br><br>
     <div class="container-fluid">
-      <h2 style="color:#42daf5">Pending/Awaiting Visitators</h2>
+      <h2 style="color:#42daf5">Pending/Awaiting Visitors</h2>
       <hr>
       <div class="row">
         <div class="form-group col-md-12">
