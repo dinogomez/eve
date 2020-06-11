@@ -1,4 +1,4 @@
- style=\'color:#fa9a00\'<?php
+<?php
 
   function getListing(){
     @include('../../library-process/connection.php');
@@ -39,6 +39,7 @@
               </div>
             </div>';
     }
+    $pStatement->close();
   }
 
   function searchVisitor($searchInput){

@@ -25,7 +25,7 @@
       </div>
 
       <!-- SIDEBAR SEARCH  -->
-      <div class="sidebar-search">
+      <!-- <div class="sidebar-search">
         <div>
           <div class="input-group">
             <input type="text" class="form-control search-menu" placeholder="Search...">
@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- SIDEBAR GENERAL  -->
       <div class="sidebar-menu">
@@ -80,6 +80,20 @@
                 </li>
                 <li>
                   <a href="admin-security-visitors-guest.php">View Guest Visitors</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>History</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="admin-security-visitors-history.php">View Past Visitors</a>
                 </li>
               </ul>
             </div>
