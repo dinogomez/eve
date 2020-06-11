@@ -76,7 +76,7 @@ $generatekey = guest_keygen(6,2);
                  <h5 class="mt-3"><?php echo $firstname.' '.$middlename.' '.$lastname;?></h5>
                  <h5 class="mt-3"><?php echo $date;?></h5>
                  <h5 class="mt-3"><?php echo $purpose;?></h5>
-                 <h5 class="mt-3"><?php echo $personToMeet; ?></h5>
+                 <h5 class="mt-3"><?php echo $personToMeet;?></h5>
                  <h5 class="mt-3"><?php echo $email;?></h5>
            </div>
      </div>
