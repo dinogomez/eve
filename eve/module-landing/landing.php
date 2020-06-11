@@ -14,8 +14,10 @@
 
     //CHECK LOGIN
     if ($_SESSION['login'] == 0) {
-    }else if ($_SESSION['login'] == 1){
+    }elseif ($_SESSION['login'] == 1 AND $_SESSION['permission'] ==4){
       header('Location:../module-student/student-home.php');
+    } elseif ($_SESSION['login'] == 1 AND $_SESSION['permission'] ==2){
+      header('Location:../module-admin/admin-security/admin-security-dashboard.php?');
     }
 
     include_once 'container-what-is-eve.php';

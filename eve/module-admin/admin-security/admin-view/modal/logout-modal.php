@@ -11,7 +11,7 @@
           </div>
         <div class="modal-footer mt-3">
           <button type="button" class="btn btn-warning"  data-dismiss="modal" style="width: 100px;">CLOSE</button>
-          <form class=""  action="../library-process/logout.php" method="post">
+          <form class=""  action="../../library-process/logout.php" method="post">
             <input class="btn btn-warning" id="submit"type="submit" name="logout" value="LOGOUT"style="width: 100px;">
           </form>
 

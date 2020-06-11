@@ -1,6 +1,9 @@
 <?php
+  require_once 'check-security.php';
   require_once('admin-security-process/process-lobby.php');
-  //HEADER
+
+
+    //HEADER
   require_once 'admin-view/header/header-welcome-login.php';
   //NAVBAR
   require_once 'admin-view/navbar/navbar-admin.php';

@@ -1,4 +1,6 @@
 <?php
+require_once 'check-security.php';
+
   //HEADER
   require_once 'admin-view/header/header-welcome-login.php';
   //NAVBAR
