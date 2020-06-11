@@ -39,8 +39,7 @@ include_once '../library-process/connection.php';
       $_SESSION['fullName'] = $_SESSION['firstName'].' '.  $_SESSION['middleName'].' '.$_SESSION['lastName'];
       $hash = $row['password'];
 
-      echo "hash:".$hash;
-      echo "password:".$password;
+    
    }
 
 
