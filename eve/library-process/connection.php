@@ -27,7 +27,7 @@ SET N TO 1 FOR @POL CONNECTION
 
 */
 
-$N = 1;
+$N = 0;
 
 if ($N == 1) {
 

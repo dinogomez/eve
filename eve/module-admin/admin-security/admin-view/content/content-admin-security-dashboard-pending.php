@@ -11,7 +11,7 @@
             <div id="clock" class="col-2" style="font-size:20px"></div>
             <div id="date" class="col-4" style="font-size:20px"></div>
             <div class="col-1">
-              <a href="admin-security-visitors-guest.php" class="btn btn-secondary">Clear Filters</a>
+              <a href="admin-security-dashboard-pending.php" class="btn btn-secondary">Clear Filters</a>
             </div>
             <div class="col-2">
               <form class="" action="admin-security-visitors-guest.php" method="get">
