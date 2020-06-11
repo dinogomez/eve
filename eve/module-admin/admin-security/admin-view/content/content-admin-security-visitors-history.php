@@ -1,9 +1,9 @@
-<?php require_once('admin-security-process/process-guests.php'); ?>
+<?php require_once('admin-security-process/process-history.php'); ?>
 
   <main class="page-content">
-    <br>
+    <br><br>
     <div class="container-fluid">
-      <h2 style="color:#42daf5">Current Guest Visitors</h2>
+      <h2 style="color:#42daf5">Visitors History</h2>
       <hr>
       <div class="row">
         <div class="form-group col-md-12">
@@ -11,21 +11,15 @@
             <div id="clock" class="col-2" style="font-size:20px"></div>
             <div id="date" class="col-4" style="font-size:20px"></div>
             <div class="col-1">
-              <a href="admin-security-visitors-guest.php" class="btn btn-secondary">Clear Filters</a>
+              <a href="admin-security-visitors-history.php" class="btn btn-secondary">Clear Filters</a>
             </div>
             <div class="col-2">
-              <form class="" action="admin-security-visitors-guest.php" method="get">
-                <select class="form-control" name="purpose" onchange='if(this.value != 0) { this.form.submit(); }'>>
-                  <option value="Tour">Tour</option>
-                  <option value="Inquiry">Inquiry</option>
-                  <option value="Event">Event</option>
-                  <option value="Enrollment">Enrollment</option>
-                  <option value="Other">Other</option>
-                </select>
+              <form class="" action="admin-security-visitors-history.php" method="get">
+                <input type="date" class="form-control" name="date" onchange='if(this.value != 0) { this.form.submit(); }' max="<?php echo date('Y-m-d'); ?>">
               </form>
             </div>
             <div class="col-3">
-              <form class="" action="admin-security-visitors-guest.php" method="get">
+              <form class="" action="admin-security-visitors-history.php" method="get">
                 <input type="search" name="search" class="form-control" placeholder="Search Visitor">
               </form>
             </div>
@@ -59,8 +53,8 @@
 
         <div class="form-group flex-column align-items-start shadow col-md-12">
           <?php
-            if(@isset($_GET['purpose'])){
-              $status = getListingByPurpose($_GET['purpose']); //get listing based on purpose
+            if(@isset($_GET['date'])){
+              $status = getListingByDate($_GET['date']); //get listing based on purpose
               if($status == "no result"){
                 onNullResults();
               }
