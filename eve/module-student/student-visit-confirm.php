@@ -56,7 +56,7 @@ $firstname = mysqli_real_escape_string($conn,$_SESSION['firstName']);
 $middlename = mysqli_real_escape_string($conn,$_SESSION['middleName']);
 $lastname = mysqli_real_escape_string($conn,$_SESSION['lastName']);
 $email = mysqli_real_escape_string($conn,$_POST['email']);
-$date = mysqli_real_escape_string($conn,$_POST['date']);
+$date = mysqli_real_escape_string($conn,$_POST['calendarDate']);
 // //we need to cast date variable because MYSQL Date format is YYY-MMM-DDD
 $date=date('Y-m-d',strtotime($date));
 $purpose = mysqli_real_escape_string($conn,$_POST['purpose']);

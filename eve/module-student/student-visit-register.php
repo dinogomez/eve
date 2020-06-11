@@ -69,6 +69,24 @@ $(function () {
     }
   });
 });
+
+//set minimum date
+$(document).ready(function() {
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1;
+	var yy = today.getFullYear();
+	if (dd<10) {
+		dd = '0' + dd;
+	}
+	if (mm<10) {
+		mm = '0' + mm;
+	}
+	var rightnow = yy + '-' + mm + '-' + dd;
+	$('#calendarDate').attr('min', rightnow);
+
+});
+
 </script>
  <div class="container mt-5" id="register">
 
@@ -79,10 +97,10 @@ $(function () {
 
 
 
-           <div class="form-group">
-             <label for="formGroupExampleInput2">Date of Visit</label>
-             <input type="date" class="form-control" name="date" placeholder=""/>
-           </div>
+       <div class="form-group">
+         <label for="formGroupExampleInput2">Date of Visit</label>
+         <input type="date" class="form-control" name="calendarDate" id = "calendarDate" placeholder="" min = "" max="<?=date('Y-m-d',strtotime(date('Y-m-d').'+20 days'))?>" required>
+       </div>
            <div class="form-group">
              <label for="formGroupExampleInput2">Purpose of Visit</label>
              <select class="custom-select" name="purpose" id = "purpose">

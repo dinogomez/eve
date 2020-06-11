@@ -12,6 +12,8 @@ require_once 'module-guest-view/navbar/nav-main.php';
 
 <!-- <link rel="stylesheet" type="text/css" href="jquery-ui.min.css"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--  Flatpickr  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
 
 <script type="text/javascript">
 $(function () {
@@ -39,19 +41,8 @@ $(document).ready(function() {
 	}
 	var rightnow = yy + '-' + mm + '-' + dd;
 	$('#calendarDate').attr('min', rightnow);
-});
-</script>
-
-<script>
-$(document).ready(function() {
-  var rangeDate = new Date() + 10;
-
-  //
-  // rangeDate.setMonth(rangeDate.getMonth() + 1);
-  $('#calendarDate').attr('max', rangeDate);
 
 });
-
 
 </script>
 
@@ -88,8 +79,7 @@ $(document).ready(function() {
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Date of Visit</label>
-                    <input type="date" class="form-control" name="calendarDate" id = "calendarDate" placeholder="" min = "" max="" required>
-                    <!-- <input type="text" class="form-control" id="datepicker"> -->
+                    <input type="date" class="form-control" name="calendarDate" id = "calendarDate" placeholder="" min = "" max="<?=date('Y-m-d',strtotime(date('Y-m-d').'+20 days'))?>" required>
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Purpose of Visit</label>
