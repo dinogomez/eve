@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `guest_register` (
 -- Dumping data for table `guest_register`
 --
 
-INSERT INTO `guest_register` (`id`, `firstname`, `middlename`, `lastname`, `email`, `date`, `purpose`, `idgiven`, `contactnum`, `guestcode`) VALUES
+INSERT INTO `guest_register` (`id`, `firstname`, `middlename`, `lastname`, `email`, `date`, `purpose`, `personToMeet`, `idgiven`, `contactnum`, `guestcode`) VALUES
 (20, 'ad', 'Caesar', 'Daman', 'dinogomez118@gmail.com', '0312-12-03', 'School Tour', 'Goverment', '0913-533-23', '2906CC'),
 (21, 'Marco', 'Caesar', 'Daman', 'dinogomez118@gmail.com', '2003-12-31', 'School Tour', 'School ID', '0913-533-23', 'NU7224'),
 (22, 'Marco', 'Caesar', 'Daman', 'dinogomez118@gmail.com', '2003-12-31', 'School Tour', 'School ID', '0913-533-23', '9MC080'),
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `user_school_visit` (
 -- Dumping data for table `user_school_visit`
 --
 
-INSERT INTO `user_school_visit` (`id`, `username`, `firstName`, `middleName`, `lastName`, `email`, `dateOfVisit`, `purpose`, `idType`, `contactNumber`, `guestcode`, `checkIn`, `checkOut`) VALUES
+INSERT INTO `user_school_visit` (`id`, `username`, `firstName`, `middleName`, `lastName`, `email`, `dateOfVisit`, `purpose`, `personToMeet`, `idType`, `contactNumber`, `guestcode`, `checkIn`, `checkOut`) VALUES
 (64, '', 'Dino Paulo', 'Reyes', 'Gomez', 'Marco@gmail.com', '2003-12-31', 'School Tour', 'School ID', '0913-533-23', 'K841K8', '0000-00-00', '0000-00-00'),
 (67, '', 'Dino Paulo', 'Reyes', 'Gomez', 'Marco@gmail.com', '2003-12-31', 'School Tour', 'Goverment', '0913-533-23', 'B86F84', '0000-00-00', '0000-00-00'),
 (69, '', '', '', '', '201801017@iacademy.edu.ph', '2020-05-30', 'Registrar', 'School ID', '09132334561', 'IL0314', '0000-00-00', '0000-00-00'),

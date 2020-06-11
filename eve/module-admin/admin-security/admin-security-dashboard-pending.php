@@ -3,7 +3,7 @@
 
   require_once('admin-security-process/process-lobby.php');
 
-  require_once 'check-permission.php';
+  // require_once 'check-permission.php';
   //HEADER
   require_once 'admin-view/header/header-welcome-login.php';
   //NAVBAR
