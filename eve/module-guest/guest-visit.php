@@ -10,6 +10,9 @@ require_once 'module-guest-view/navbar/nav-main.php';
 
  ?>
 
+<!-- <link rel="stylesheet" type="text/css" href="jquery-ui.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script type="text/javascript">
 $(function () {
   $("#purpose").change (function() {
@@ -21,8 +24,36 @@ $(function () {
     }
   });
 });
+
+//set minimum date
+$(document).ready(function() {
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1;
+	var yy = today.getFullYear();
+	if (dd<10) {
+		dd = '0' + dd;
+	}
+	if (mm<10) {
+		mm = '0' + mm;
+	}
+	var rightnow = yy + '-' + mm + '-' + dd;
+	$('#calendarDate').attr('min', rightnow);
+});
 </script>
 
+<script>
+$(document).ready(function() {
+  var rangeDate = new Date() + 10;
+
+  //
+  // rangeDate.setMonth(rangeDate.getMonth() + 1);
+  $('#calendarDate').attr('max', rangeDate);
+
+});
+
+
+</script>
 
 
     <!-- nav -->
@@ -57,7 +88,8 @@ $(function () {
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Date of Visit</label>
-                    <input type="date" class="form-control" name="date" placeholder="" required>
+                    <input type="date" class="form-control" name="calendarDate" id = "calendarDate" placeholder="" min = "" max="" required>
+                    <!-- <input type="text" class="form-control" id="datepicker"> -->
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Purpose of Visit</label>
