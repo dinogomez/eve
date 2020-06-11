@@ -61,7 +61,7 @@ $(function () {
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Purpose of Visit</label>
-                    <select class="custom-select" name="purpose">
+                    <select class="custom-select" name="purpose" id = "purpose">
                       <option selected>Purpose of Visit</option>
                       <option value="School Tour">School Tour</option>
                       <option value="Registrar">Registrar</option>
@@ -73,7 +73,7 @@ $(function () {
                   <!-- to appear if meeting is selected -->
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Person to Meet</label>
-                    <input type = "text"  class = "form-control" id ="personToMeet" disabled ="disabled" placeholder="Person to meet" required/>
+                    <input type = "text"  class = "form-control" id ="personToMeet" name = "personToMeet" disabled ="disabled" placeholder="Person to meet" required/>
                   </div>
 
 
