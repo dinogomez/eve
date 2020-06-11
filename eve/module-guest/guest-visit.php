@@ -57,12 +57,12 @@ $(function () {
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Date of Visit</label>
-                    <input type="date" class="form-control" name="date" placeholder="">
+                    <input type="date" class="form-control" name="date" placeholder="" required>
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Purpose of Visit</label>
-                    <select class="custom-select" name="purpose" id = "purpose">
-                      <option selected>Purpose of Visit</option>
+                    <select class="custom-select" name="purpose" id = "purpose" required>
+                      <option value = "">Purpose of Visit</option>
                       <option value="School Tour">School Tour</option>
                       <option value="Registrar">Registrar</option>
                       <!-- <option value="Event">Event</option> -->
@@ -79,8 +79,8 @@ $(function () {
 
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Type of ID</label>
-                    <select class="custom-select" name="idgiven">
-                      <option selected>Type of ID</option>
+                    <select class="custom-select" name="idgiven" required>
+                      <option value = "">Type of ID</option>
                       <option value="Goverment">Goverment</option>
                       <option value="School ID">School ID</option>
                       <option value="Company ID">Company ID</option>
@@ -88,7 +88,7 @@ $(function () {
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="formGroupExampleInput2">Contanct Number</label>
+                    <label for="formGroupExampleInput2">Contact Number</label>
                     <input type="text" class="form-control" name="contactnum" placeholder="optional">
                   </div>
 

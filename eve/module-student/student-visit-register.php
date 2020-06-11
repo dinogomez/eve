@@ -86,7 +86,7 @@ $(function () {
            <div class="form-group">
              <label for="formGroupExampleInput2">Purpose of Visit</label>
              <select class="custom-select" name="purpose" id = "purpose">
-               <option selected>Purpose of Visit</option>
+               <option value ="">Purpose of Visit</option>
                <option value="School Tour">School Tour</option>
                <option value="Registrar">Registrar</option>
                <!-- <option value="Event">Event</option> no more event-->
@@ -106,7 +106,7 @@ $(function () {
            <div class="form-group">
              <label for="formGroupExampleInput2">Type of ID</label>
              <select class="custom-select" name="idgiven">
-               <option selected>Type of ID</option>
+               <option value ="">Type of ID</option>
                <option value="Goverment">Goverment</option>
                <option value="School ID">School ID</option>
                <option value="Company ID">Company ID</option>
