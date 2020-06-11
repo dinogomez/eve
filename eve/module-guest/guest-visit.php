@@ -96,6 +96,7 @@ $(function () {
                           <div class="container mt-4">
                             <div class="row">
                               <div class="col text-center">
+                                <a class="btn btn-outline-warning btn-edit"  href="../module-landing/landing.php" >Back</a>
                                 <input class="btn btn-outline-warning shadow" id="submit" type="submit" name="register" value="Confirm"style="width: 100px;">
                               </div>
                             </div>
