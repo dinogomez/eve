@@ -45,10 +45,11 @@
   function searchVisitor($searchInput){
     @include('../../library-process/connection.php');
 
-    $query = 'SELECT * FROM guest_register WHERE firstname LIKE ? OR lastname LIKE ? OR guestcode LIKE ? ORDER BY date DESC';
+    $query = 'SELECT * FROM guest_register WHERE firstname LIKE ? OR lastname LIKE ? OR guestcode LIKE ? AND date = ?';
     $pStatement = $conn->prepare($query);
     $searchInput = '%'.$searchInput.'%';
-    $pStatement->bind_param('sss', $searchInput, $searchInput,$searchInput);
+    $dateNow = date('Y-m-d');
+    $pStatement->bind_param('ssss', $searchInput, $searchInput,$searchInput, $dateNow);
     $pStatement->execute();
     $result = $pStatement->get_result();
     if($result->num_rows == 0)
@@ -89,10 +90,11 @@
   function getListingByPurpose($value){
     @include('../../library-process/connection.php');
 
-    $query = 'SELECT * FROM guest_register WHERE purpose LIKE ? ORDER BY date DESC';
+    $query = 'SELECT * FROM guest_register WHERE purpose LIKE ? AND date = ? ORDER BY date DESC';
     $pStatement = $conn->prepare($query);
     $searchInput = '%'.$value.'%';
-    $pStatement->bind_param('s', $searchInput);
+    $dateNow = date('Y-m-d');
+    $pStatement->bind_param('ss', $searchInput, $dateNow);
     $pStatement->execute();
     $result = $pStatement->get_result();
 
