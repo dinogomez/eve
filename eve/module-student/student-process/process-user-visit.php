@@ -1,6 +1,7 @@
 <?php
 
 include_once '../../library-process/connection.php';
+include_once 'mail.php';
 
 
 
@@ -30,7 +31,9 @@ $sql = "INSERT INTO user_school_visit (id, username, firstName, middleName, last
 VALUES (NULL,'$username', '$firstname', '$middlename', '$lastname', '$email', '$date', '$purpose', '$idgiven', '$contactnum', '$generatekey')";
 
 $result = mysqli_query($conn,$sql);
+// SENDMAIL Function
 
+sendmail($email,$generatekey,$firstname,$middlename,$lastname,$date,$purpose);
 header("Location: ../student-home.php ")
 
 

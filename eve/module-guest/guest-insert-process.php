@@ -1,6 +1,7 @@
 <?php
 
 include_once '../library-process/connection.php';
+include_once '../library-process/mail.php';
 
 
 $firstname = mysqli_real_escape_string($conn,$_POST['firstname']);
@@ -20,6 +21,10 @@ $sql= "INSERT INTO guest_register (firstname,middlename,lastname,email,date,purp
 VALUES ('$firstname', '$middlename', '$lastname', '$email', '$date', '$purpose', '$idgiven', '$contactnum', '$personToMeet', '$generatekey')";
 
 $result = mysqli_query($conn,$sql);
+
+// SENDMAIL Function
+
+  sendmail($email,$generatekey,$firstname,$middlename,$lastname,$date,$purpose);
 
 $_SESSION['isRegistered'] = 0;
 header("Location:../module-landing/landing.php");
