@@ -4,6 +4,8 @@
 require '../../../phpmailer/PHPMailerAutoload.php';
 function sendmail($email,$generatekey,$firstname,$middlename,$lastname,$date,$purpose){
 
+
+
   $mail = new PHPMailer();
   $mail->isSMTP();                                      // Set mailer to use SMTP
   $mail->SMTPAuth = true;                               // Enable SMTP authentication
