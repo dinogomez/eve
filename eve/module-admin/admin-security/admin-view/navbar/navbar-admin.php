@@ -1,7 +1,7 @@
 <div class="navbar">
   <nav class="navbar navbar-expand-md navbar-dark  navbar-custom shadow rounded row fixed-top mb-5 ml-auto">
     <div class=" col-xl-4">
-      <a href="admin-security-home  .php" class="navbar-brand nav-title"><span class="yellow">.</span>EVE</a>
+      <a href="admin-security-dashboard.php" class="navbar-brand nav-title"><span class="yellow">.</span>EVE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
             <span class="navbar-toggler-icon"></span>
         </button>

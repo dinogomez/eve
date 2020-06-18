@@ -63,23 +63,23 @@ $(function () {
 
                   <div class="form-group">
                     <label for="formGroupExampleInput">First Name</label>
-                    <input type="text" class="form-control" name="firstname" placeholder="Tim" value="" required>
+                    <input type="text" class="form-control" name="firstname" placeholder="First Name" value="" required>
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Middle Name</label>
-                    <input type="text" class="form-control"  name="middlename"placeholder="Berners" required>
+                    <input type="text" class="form-control"  name="middlename"placeholder="Middle Name" required>
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Last Name</label>
-                    <input type="text" class="form-control" name="lastname" placeholder="Lee" required>
+                    <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Email</label>
                     <input type="email" class="form-control"  name="email"placeholder="optional">
                   </div>
                   <div class="form-group">
-                    <label for="formGroupExampleInput2">Date of Visit</label>
-                    <input type="date" class="form-control" name="calendarDate" id = "calendarDate" placeholder="" min = "" max="<?//=//date('Y-m-d',strtotime(date('Y-m-d').'+20 days'))?>" required>
+                     <label for="formGroupExampleInput2">Date of Visit</label>
+                     <input type="date" class="form-control" name="date" placeholder="">
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Purpose of Visit</label>

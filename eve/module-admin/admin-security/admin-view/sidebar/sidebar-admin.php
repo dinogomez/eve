@@ -95,6 +95,9 @@
                 <li>
                   <a href="admin-security-visitors-history.php">View Past Visitors</a>
                 </li>
+                <li>
+                  <a href="admin-security-activity-log.php">Activity Log</a>
+                </li>
               </ul>
             </div>
           </li>

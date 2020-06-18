@@ -3,14 +3,14 @@
   require_once('admin-security-process/process-lobby.php');
 
 
-    //HEADER
+  //HEADER
   require_once 'admin-view/header/header-welcome-login.php';
   //NAVBAR
   require_once 'admin-view/navbar/navbar-admin.php';
   //SIDEBAR
   require_once 'admin-view/sidebar/sidebar-admin.php';
   //PAGE CONTENT
-  require_once 'admin-view/content/content-admin-security-dashboard.php';
+  require_once 'admin-view/content/content-admin-security-activity-log.php';
   //LOGOUT MODAL
   require_once 'admin-view/modal/logout-modal.php';
   //FOOTER
@@ -18,10 +18,8 @@
 
   if(@isset($_GET['onCheckOut'])){
     checkOutVisitor($_GET['onCheckOut']);
-    // header("Location: admin-securtiy-dashboard-pending.php");
   }
   if(@isset($_GET['onCheckIn'])){
     checkInVisitor($_GET['onCheckIn'], $_GET['type']);
-    // header("Location: admin-securtiy-dashboard-pending.php");
   }
  ?>

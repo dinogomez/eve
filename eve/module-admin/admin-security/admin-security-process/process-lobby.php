@@ -95,7 +95,7 @@
     $pStatement->execute();
     $pStatement->close();
 
-    redirect('admin-security-dashboard.php');
+    // redirect('admin-security-dashboard.php');
   }
 
   function searchCheckedInListing($searchInput){
@@ -242,8 +242,14 @@
   }
 
   function logCheck($message){
+    @include('../../library-process/connection.php');
+    @include('process-activity-log.php');
     $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
-    error_log(date('H:i jS F Y').': '.$message.PHP_EOL,3,$DOCUMENT_ROOT.'/../apache/logs/eve-lobby.log');
+    error_log(date('H:i jS F Y').': '.$message.PHP_EOL,3,$DOCUMENT_ROOT.'/../apache/logs/eve-lobby.log'); //log to a text file
+
+    /*INSERT INTO DB*/
+    insertLog($message);
+
   }
 
   function redirect($link){

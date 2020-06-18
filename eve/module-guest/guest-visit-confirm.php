@@ -11,9 +11,9 @@
          $middlename = mysqli_real_escape_string($conn,$_POST['middlename']);
          $lastname = mysqli_real_escape_string($conn,$_POST['lastname']);
          $email = mysqli_real_escape_string($conn,$_POST['email']);
-         $date = $_POST['calendarDate'];
+         $date = mysqli_real_escape_string($conn,$_POST['date']);
          // //we need to cast date variable because MYSQL Date format is YYY-MMM-DDD
-         // $date=date('Y-m-d',strtotime($date));
+        $date=date('Y-m-d',strtotime($date));
          $purpose = mysqli_real_escape_string($conn,$_POST['purpose']);
          $idgiven = mysqli_real_escape_string($conn,$_POST['idgiven']);
          $contactnum = mysqli_real_escape_string($conn,$_POST['contactnum']);
