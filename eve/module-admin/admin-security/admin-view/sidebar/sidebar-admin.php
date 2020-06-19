@@ -81,6 +81,9 @@
                 <li>
                   <a href="admin-security-visitors-guest.php">View Guest Visitors</a>
                 </li>
+                <li>
+                  <a href="admin-view-all-visitors.php">View All Visitors</a>
+                </li>
               </ul>
             </div>
           </li>
