@@ -11,9 +11,8 @@
             <div id="clock" class="col-2" style="font-size:20px"></div>
             <div id="date" class="col-4" style="font-size:20px"></div>
             <div class="col-2">
-              <form method="post">
-                <input type="submit" name="create-pdf" class="btn btn-success" value="Create PDF"/>
-              </form>
+              <a class="btn btn-success"href="admin-security-process/process-report.php">Generate PDF</a>
+
             </div>
             <div class="col-1">
               <a href="admin-security-visitors-history.php" class="btn btn-secondary">Clear Filters</a>
