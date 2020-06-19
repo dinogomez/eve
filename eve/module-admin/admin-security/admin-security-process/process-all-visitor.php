@@ -42,10 +42,9 @@
 
 if( !isset($_POST['submit']) ) {
 ?>
-    <form method='post' action=''>Name
-        <input type="text" name="name" />
-        <input type="submit" value="submit" name="submit" />
-    </form>
+<form method="post">
+  <input type="submit" name="create-pdf" class="btn btn-success" value="Create PDF"/>
+</form>
 <?php
 } else {
 ob_start();
