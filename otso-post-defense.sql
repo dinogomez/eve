@@ -102,12 +102,25 @@ CREATE TABLE `guest_register` (
 -- Dumping data for table `guest_register`
 --
 
+<<<<<<< HEAD:otso-post-defense.sql
 INSERT INTO `guest_register` (`id`, `firstname`, `middlename`, `lastname`, `email`, `date`, `purpose`, `personToMeet`, `idgiven`, `contactnum`, `guestcode`, `status`) VALUES
 (52, 'Owen', 'C.', 'Clamor', 'owenclamor@yahoo.com', '2020-06-12', 'School Tour', '', 'School ID', '', '81C3U6', 'checkedIn'),
 (53, 'Tim', 'Berners', 'Lee', 'timbernerslee@gmail.com', '2020-06-18', 'School Tour', '', 'Goverment', '', 'QB0806', 'checkedIn'),
 (54, 'Tim', 'Berners', 'Lee', 'timbernerslee@gmail.com', '2020-06-19', 'Registrar', '', 'School ID', '', '466XA7', 'checkedIn'),
 (55, 'Ke\\\'an Martin', 'S.', 'Consolacion', 'keanconsolacion@gmail.com', '2020-06-19', 'Registrar', '', 'School ID', '', 'B6998N', 'checkedIn'),
 (56, 'Tim', 'Berners', 'Lee', '123123@yahoo.com', '2020-06-19', 'Registrar', '', 'School ID', '', '2N54D2', 'complete');
+=======
+INSERT INTO `guest_register` (`id`, `firstname`, `middlename`, `lastname`, `email`, `date`, `purpose`, `personToMeet`, `idgiven`, `contactnum`, `guestcode`) VALUES
+(20, 'ad', 'Caesar', 'Daman', 'dinogomez118@gmail.com', '0312-12-03', 'School Tour', 'Goverment', '0913-533-23', '2906CC'),
+(21, 'Marco', 'Caesar', 'Daman', 'dinogomez118@gmail.com', '2003-12-31', 'School Tour', 'School ID', '0913-533-23', 'NU7224'),
+(22, 'Marco', 'Caesar', 'Daman', 'dinogomez118@gmail.com', '2003-12-31', 'School Tour', 'School ID', '0913-533-23', '9MC080'),
+(23, 'Marco', 'Caesar', 'Daman', 'Marco@gmail.com', '2003-02-13', 'Purpose of Visit', 'Goverment', '0913-533-23', 'I91J16'),
+(24, 'Mathias', 'Polo', 'Gomez', 'dinogomez118@gmail.com', '2020-05-09', 'Registrar', 'Driver License', '0913-533-23', 'J8J165'),
+(25, 'Mathias', 'Caesar', 'Daman', 'Marco@gmail.com', '3123-12-12', 'School Tour', 'Goverment', '0913-533-23', 'I931U2'),
+(26, '', '', '', '', '0000-00-00', '', '', '', ''),
+(27, '', '', '', '', '0000-00-00', '', '', '', ''),
+(28, '', '', '', '', '0000-00-00', '', '', '', '');
+>>>>>>> origin/cams-branch:otso-pol-5-26-20-LatestTables.sql
 
 -- --------------------------------------------------------
 
@@ -161,10 +174,21 @@ CREATE TABLE `user_school_visit` (
 -- Dumping data for table `user_school_visit`
 --
 
+<<<<<<< HEAD:otso-post-defense.sql
 INSERT INTO `user_school_visit` (`id`, `username`, `firstName`, `middleName`, `lastName`, `email`, `dateOfVisit`, `purpose`, `personToMeet`, `idType`, `contactNumber`, `guestcode`, `checkIn`, `checkOut`, `status`) VALUES
 (106, 'kean-student', 'Ke\\\'an Martin', 'S.', 'Consolacion', '', '2020-06-12', 'Registrar', '', 'Goverment', '', '08J25C', '0000-00-00', '0000-00-00', 'checkedIn'),
 (107, 'kean-student', 'Ke\\\'an Martin', 'S.', 'Consolacion', '', '2020-06-25', 'Registrar', '', 'School ID', '', 'M7U523', '0000-00-00', '0000-00-00', 'checkedIn'),
 (108, 'kean-student', 'Ke\\\'an Martin', 'S.', 'Consolacion', '', '2020-06-19', 'Registrar', '', 'School ID', '', '9X165H', '0000-00-00', '0000-00-00', 'complete');
+=======
+INSERT INTO `user_school_visit` (`id`, `username`, `firstName`, `middleName`, `lastName`, `email`, `dateOfVisit`, `purpose`, `personToMeet`, `idType`, `contactNumber`, `guestcode`, `checkIn`, `checkOut`) VALUES
+(64, '', 'Dino Paulo', 'Reyes', 'Gomez', 'Marco@gmail.com', '2003-12-31', 'School Tour', 'School ID', '0913-533-23', 'K841K8', '0000-00-00', '0000-00-00'),
+(67, '', 'Dino Paulo', 'Reyes', 'Gomez', 'Marco@gmail.com', '2003-12-31', 'School Tour', 'Goverment', '0913-533-23', 'B86F84', '0000-00-00', '0000-00-00'),
+(69, '', '', '', '', '201801017@iacademy.edu.ph', '2020-05-30', 'Registrar', 'School ID', '09132334561', 'IL0314', '0000-00-00', '0000-00-00'),
+(75, '', '', '', '', '', '1970-01-01', '', '', '', '', '0000-00-00', '0000-00-00'),
+(80, '201801018', 'Jack', 'Severus', 'Sparrow', 'Marco@gmail.com', '2020-05-20', 'School Tour', 'Goverment', '0913-533-23', '01JJ70', '0000-00-00', '0000-00-00'),
+(81, '201801018', 'Jack', 'Severus', 'Sparrow', 'ad@gmail.com', '2020-05-30', 'Event', 'Company ID', '0913-533-23', '946GC7', '0000-00-00', '0000-00-00'),
+(87, '201801017', 'Dino Paulo', 'Reyes', 'Gomez', 'Marco@gmail.com', '0023-12-31', 'School Tour', 'Goverment', '0913-533-23', '0Q9Z64', '0000-00-00', '0000-00-00');
+>>>>>>> origin/cams-branch:otso-pol-5-26-20-LatestTables.sql
 
 -- --------------------------------------------------------
 

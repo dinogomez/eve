@@ -95,7 +95,7 @@ $(function () {
                   <!-- to appear if meeting is selected -->
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Person to Meet</label>
-                    <input type = "text"  class = "form-control" id ="personToMeet" name = "personToMeet" disabled ="disabled" placeholder="Person to meet" required/>
+                    <input type = "text"  class = "form-control" id ="personToMeet" name = "personToMeet" disabled ="disabled" placeholder="Person to meet" value="<?php if(!empty($_POST['personToMeet'])) echo $_POST['quantity'];?>"required/>
                   </div>
 
 
