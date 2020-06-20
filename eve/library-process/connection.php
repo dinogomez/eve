@@ -1,7 +1,7 @@
 <?php
 
 
-session_start();
+@(session_start());
 //prepared statement variables
 //change these settings to match with your database.
 /*since ginagamit ko is hosted phpmyadmin sa office, I have a current account for the db

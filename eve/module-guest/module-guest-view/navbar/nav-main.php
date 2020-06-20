@@ -2,7 +2,7 @@
   <div class="col-xl-3">
 
   </div>
-    <div class=" col-xl-4">
+    <div class=" col-xl-5">
       <a href="../module-landing/landing.php" class="navbar-brand nav-title"><span class="yellow">.</span>EVE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
               <span class="navbar-toggler-icon"></span>
@@ -19,13 +19,13 @@
                 </li>
             </ul> -->
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a class="nav-text navlink" href="../debug-tools/"><span class="small" style="color:Red;">debug menu</span>
 </a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                   <a class="nav-text navlink" href="../module-landing/changelog.php">Changelog</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                   <a class="nav-text navlink" href="guest-visit.php">Guest</a>
               </li>

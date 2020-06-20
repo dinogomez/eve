@@ -9,9 +9,9 @@
     <!-- NAVBAR ITEMS -->
     <div class="navbar-collapse collapse ml-auto">
       <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
               <a class="nav-text navlink" href="changelog.php">Changelog</a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
               <a class="nav-text navlink" data-toggle="modal" data-target="#logoutModal" href="#landing.php">Logout</a>
