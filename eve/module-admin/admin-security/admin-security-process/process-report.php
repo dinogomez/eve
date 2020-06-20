@@ -123,11 +123,14 @@ $pdf->Cell(34 ,5,'Purpose',1,1);//end of line
 $pdf->SetFont('Arial','',12);
 $stat = "complete";
 //Numbers are right-aligned so we give 'R' after new line parameter
-$sql = "SELECT * FROM guest_register WHERE MONTH(date) = MONTH(CURRENT_DATE())
-AND YEAR(date) = YEAR(CURRENT_DATE()) AND  status = '$stat'";
-$result = mysqli_query($conn,$sql);
-$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+$query = 'SELECT * FROM guest_register WHERE status LIKE "complete" AND MONTH(date) = MONTH(CURRENT_DATE()) AND YEAR(date) = YEAR(CURRENT_DATE())';
+$pStatement = $conn->prepare($query);
+$param = 'complete';
+@($pStatement->bind_param('ss', $param2));
+$pStatement->execute();
+$result = $pStatement->get_result();
+
+while($row = $result->fetch_assoc()){
   $fullname = $row['firstname']." ".$row['middlename']." ".$row['lastname'];
   $pdf->Cell(130 ,5,$fullname,1,0);
   $pdf->Cell(25 ,5,$row['date'],1,0);
@@ -146,11 +149,14 @@ $pdf->Cell(34 ,5,'Purpose',1,1);//end of line
 $pdf->SetFont('Arial','',12);
 $stat = "complete";
 //Numbers are right-aligned so we give 'R' after new line parameter
-$sql = "SELECT * FROM user_school_visit WHERE MONTH(dateOfVisit) = MONTH(CURRENT_DATE())
-AND YEAR(dateOfVisit) = YEAR(CURRENT_DATE()) AND status = '$stat'";
-$result = mysqli_query($conn,$sql);
-$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+$query = 'SELECT * FROM user_school_visit WHERE status LIKE "complete" AND MONTH(dateOfVisit) = MONTH(CURRENT_DATE()) AND YEAR(dateOfVisit) = YEAR(CURRENT_DATE())';
+$pStatement = $conn->prepare($query);
+$param = 'complete';
+@($pStatement->bind_param('ss', $param2));
+$pStatement->execute();
+$result = $pStatement->get_result();
+
+while($row = $result->fetch_assoc()){
   $fullname = $row['firstName']." ".$row['middleName']." ".$row['lastName'];
   $pdf->Cell(130 ,5,$fullname,1,0);
   $pdf->Cell(25 ,5,$row['dateOfVisit'],1,0);
