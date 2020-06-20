@@ -51,7 +51,7 @@ $(function () {
 
     <div class="jumbotron jumbotron-fluid mt-5">
       <div class="container pt-5 shadow jumbocontatiner">
-        <h1 class="display-4 text-center">.Guest Visit Registration</h1>
+        <h1 class="display-4 text-center">Guest Visit Registration</h1>
         <h5 class="card-subtitle mb-2 purple text-center">EVE</h5>
 
         <p class="lead text-center">Please fill up the following.</p>

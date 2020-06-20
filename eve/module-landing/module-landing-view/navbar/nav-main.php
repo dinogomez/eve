@@ -2,14 +2,14 @@
   <div class="col-xl-3">
 
   </div>
-    <div class=" col-xl-4">
+    <div class=" col-xl-5">
       <a href="landing.php" class="navbar-brand nav-title"><span class="yellow">.</span>EVE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
               <span class="navbar-toggler-icon"></span>
           </button>
     </div>
 
-        <div class="navbar-collapse collapse justify-content-stretch navright col-xl-3 ml-5" id="navbar6">
+        <div class="navbar-collapse collapse justify-content-stretch navright col-xl-3 ml-3" id="navbar6">
             <!-- <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Link <span class="sr-only">Home</span></a>
@@ -23,9 +23,9 @@
                   <a class="nav-text navlink" href="../debug-tools/"><span class="small" style="color:Red;">debug menu</span>
 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a class="nav-text navlink" href="changelog.php">Changelog</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                   <a class="nav-text navlink" href="../module-guest/guest-visit.php">Guest</a>
               </li>

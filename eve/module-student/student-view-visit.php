@@ -50,7 +50,7 @@ $(document).ready(function(){
            <th>Date of Visit</th>
            <th>ID Type</th>
            <th>Visit Code</th>
-           <th style='text-align: center'>Operation</th>
+           <th style='text-align: center'></th>
 
          </tr>
        </thead>
