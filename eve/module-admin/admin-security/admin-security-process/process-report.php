@@ -130,6 +130,7 @@ $param = 'complete';
 $pStatement->execute();
 $result = $pStatement->get_result();
 
+
 while($row = $result->fetch_assoc()){
   $fullname = $row['firstname']." ".$row['middlename']." ".$row['lastname'];
   $pdf->Cell(130 ,5,$fullname,1,0);
