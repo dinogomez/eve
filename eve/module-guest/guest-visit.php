@@ -79,7 +79,7 @@ $(function () {
                   </div>
                   <div class="form-group">
                      <label for="formGroupExampleInput2">Date of Visit</label>
-                     <input type="date" class="form-control" name="date" placeholder="">
+                     <input type="date" class="form-control" name="date" placeholder="" min = "<?=date('Y-m-d')?>" max="<?=date('Y-m-d',strtotime(date('Y-m-d').'+20 days'))?>">
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Purpose of Visit</label>

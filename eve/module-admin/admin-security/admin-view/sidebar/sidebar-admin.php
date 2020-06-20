@@ -1,3 +1,9 @@
+<?php
+  @($username = $_SESSION['username']);
+  @($sql = "SELECT permission,firstName,middleName,lastName FROM users WHERE username ='$username'");
+  @($result = mysqli_query($conn,$sql));
+  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+?>
 <!-- PAGE WRAPPER -->
 <div class="page-wrapper chiller-theme toggled">
   <a id="show-sidebar" class="btn btn-sm btn-dark" href="#"><i class="fas fa-bars"></i></a>
@@ -18,8 +24,18 @@
 
         </div>
         <div class="user-info">
-          <span class="user-name"><?php echo "Dummy Kean User"; ?></span>
-          <span class="user-role">Administrator</span>
+          <span class="user-name"><strong><?php echo @($_SESSION['fullName']) ?></strong></span>
+          <span class="user-role">
+
+            <?php if ($_SESSION['permission'] == 2) {
+            echo "Administrator";
+           } else {
+            echo "Student";
+          }; ?></span>
+          <!-- <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+          </span> -->
           <span class="user-status"><i class="fa fa-circle"></i><span>Online</span></span>
         </div>
       </div>
@@ -44,12 +60,12 @@
           <li class="header-menu">
             <span>General</span>
           </li>
-          <li>
+          <!-- <li>
             <a href="admin-security-home.php">
               <i class="fa fa-home"></i>
               <span>Home</span>
             </a>
-          </li>
+          </li> -->
 
           <li class="sidebar-dropdown">
             <a href="#">
