@@ -9,21 +9,21 @@
         <div class="form-group col-md-12">
           <div class="row">
             <div id="clock" class="col-2" style="font-size:20px"></div>
-            <div id="date" class="col-4" style="font-size:20px"></div>
-            <div class="col-2">
+            <div id="date" class="col-3" style="font-size:20px"></div>
+            <div class="col-1">
               <a class="btn btn-success"href="admin-security-process/process-report.php">Generate PDF</a>
 
             </div>
             <div class="col-1">
-              <a href="admin-security-visitors-history.php" class="btn btn-secondary">Clear Filters</a>
+              <a href="admin-view-all-visitors.php" class="btn btn-secondary">Clear Filters</a>
             </div>
             <div class="col-2">
-              <form class="" action="admin-security-visitors-history.php" method="get">
+              <form class="" action="admin-view-all-visitors.php" method="get">
                 <input type="date" class="form-control" name="date" onchange='if(this.value != 0) { this.form.submit(); }' max="<?php echo date('Y-m-d'); ?>">
               </form>
             </div>
             <div class="col-3">
-              <form class="" action="admin-security-visitors-history.php" method="get">
+              <form class="" action="admin-view-all-visitors.php" method="get">
                 <input type="search" name="search" class="form-control" placeholder="Search Visitor">
               </form>
             </div>

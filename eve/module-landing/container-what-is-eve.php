@@ -8,8 +8,7 @@
     establishment, and even organizing events. </p>
     <span class="purple"></span>
     <p class="lead jumbolead">The system is a <span class="purple">comprehensive</span> and <span class="purple">exceptional</span>
-      that embodies efficiency in multiple ways. It makes visiting campus, participating in events,
-      or even creating events an easy and trouble-free activity. This system smoothens front desk
+      that embodies efficiency in multiple ways. It makes visiting campus an easy and trouble-free activity. This system smoothens front desk
       operations by transforming complex and <span class="purple">long waiting registration times</span> into a simple
       and hassle-free action. This system increases the level of security enforced inside a
       premise. It also provides data management in order to make retrieval of data efficient.
